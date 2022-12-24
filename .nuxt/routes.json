@@ -1,0 +1,38 @@
+[
+  {
+    "name": "about",
+    "path": "/about",
+    "component": "D:\\\\Web Projects\\\\Vue Nuxt\\\\myresturant1\\\\pages\\\\about.vue",
+    "chunkName": "pages/about"
+  },
+  {
+    "name": "contact",
+    "path": "/contact",
+    "component": "D:\\\\Web Projects\\\\Vue Nuxt\\\\myresturant1\\\\pages\\\\contact.vue",
+    "chunkName": "pages/contact"
+  },
+  {
+    "name": "media-gallery",
+    "path": "/media/gallery",
+    "component": "D:\\\\Web Projects\\\\Vue Nuxt\\\\myresturant1\\\\pages\\\\media\\\\gallery\\\\index.vue",
+    "chunkName": "pages/media/gallery/index"
+  },
+  {
+    "name": "media-news",
+    "path": "/media/news",
+    "component": "D:\\\\Web Projects\\\\Vue Nuxt\\\\myresturant1\\\\pages\\\\media\\\\news\\\\index.vue",
+    "chunkName": "pages/media/news/index"
+  },
+  {
+    "name": "media-videos",
+    "path": "/media/videos",
+    "component": "D:\\\\Web Projects\\\\Vue Nuxt\\\\myresturant1\\\\pages\\\\media\\\\videos\\\\index.vue",
+    "chunkName": "pages/media/videos/index"
+  },
+  {
+    "name": "index",
+    "path": "/",
+    "component": "D:\\\\Web Projects\\\\Vue Nuxt\\\\myresturant1\\\\pages\\\\index.vue",
+    "chunkName": "pages/index"
+  }
+]

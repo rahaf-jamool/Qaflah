@@ -1,0 +1,106 @@
+/* 13. Team Css */
+.team-space {
+    padding: 0px 105px;
+    @include mq(xl){
+        padding: 0px 30px;
+      }
+      @include mq(lg){
+        padding: 0px 15px;
+      }
+      @include mq(md){
+        padding: 0px 0px;
+      }
+      @include mq(xs){
+        padding: 0px 0px;
+      }
+}
+.kteam {
+    border-bottom: 1px solid $border-color;
+    position: relative;
+    &:hover{
+        &::before{
+            left: 0;
+            right: auto;
+            width: 100%;
+        }
+    }
+    &::before{
+        position: absolute;
+        content: '';
+        left: auto;
+        right: 0;
+        width: 0px;
+        bottom: 0;
+        background-color: $theme-color;
+        height: 1px;
+        transition: all 0.5s ease-in-out;
+    }
+    &-img {
+        overflow: hidden;
+        position: relative;
+        &-social {
+            position: absolute;
+            left: 0px;
+            bottom: -50px;
+            right: 0px;
+            margin: 0 auto;
+            text-align: center;
+            @include transition(0.3s);
+            & a {
+                height: 36px;
+                width: 36px;
+                line-height: 38px;
+                vertical-align: middle;
+                border-radius: 50%;
+                text-align: center;
+                background: $white-color;
+                color: $heading-color;
+                display: inline-block;
+                margin: 0px 5px;
+                & i {
+                    transform: rotate(0deg); 
+                    @include transition(0.3s);
+                }
+                &:hover {
+                    background: $theme-color;
+                    color: $white-color;
+                    & i {
+                        transform: rotate(360deg);
+                    }
+                }
+            }
+        }
+    }
+    & img {
+        width: 100%;
+        -webkit-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+    }
+    &:hover {
+        & img {
+            transform: scale3d(1.1, 1.1, 1.1); 
+            -webkit-filter: grayscale(0%);
+            -ms-filter: grayscale(0%);
+            -moz-filter: grayscale(0%);
+        }
+        & .kteam-img-social {
+            bottom: 30px;
+        }
+    }
+}
+.kteam-text {
+    padding: 25px 25px;
+    & span {
+        font-size: 14px;
+        font-weight: 700;
+        color: $theme-color;
+        display: block;
+        letter-spacing: 1px;
+    }
+}
+.kteam-title {
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+}

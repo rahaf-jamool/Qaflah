@@ -1,0 +1,122 @@
+.news {
+  background-color: #f7f7f7;
+  margin-bottom: -45px;
+}
+
+.news .news-item {
+  border: 1px solid #efefef;
+  margin-bottom: 45px;
+  background-color: #fff;
+}
+.news .news-item .news-thumbnail a {
+  display: block;
+  overflow: hidden;
+}
+.news .news-item .news-thumbnail .news-image {
+  width: 100%;
+  transition: all 600ms ease-in-out 0s;
+}
+.news .news-item .news-thumbnail img:hover {
+  /* transform: scale(1.03) rotate(1deg); */
+  transform: scale(1.1);
+}
+.news .news-item .news-details {
+  color: #606060;
+  padding: 40px 30px;
+}
+.news .news-item .news-details .categories{
+  display: flex;
+}
+.news .news-item .news-details .categories a {
+  color: #606060;
+}
+.news .news-item .news-details .categories .vr {
+  color: orangered;
+  opacity: 1;
+}
+.news .news-item .news-details .news-title {
+  margin: 10px 0 20px 0;
+}
+.news .news-item .news-details .news-title a {
+  transition: all 200ms ease 0s;
+  text-decoration: none;
+  color: #1c2b7f;
+  font-weight: bold;
+}
+
+.news .news-item .news-details p.desc {
+  font-size: 16px;
+  line-height: 27px;
+  color: #606060;
+}
+.news .news-item .news-details .read-more {
+  background: orangered;
+  border-radius: 0;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 15px 30px;
+  font-size: 14px;
+  position: relative;
+  z-index: 1;
+  transition: all 0.5s ease-in-out;
+  border-radius: 5px;
+  color: #fff;
+}
+.news .news-item .news-details .read-more:before {
+  content: "";
+  width: 0%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 50%;
+  background-color: #9c9c9e;
+  transition: 0.5s ease-in-out;
+  z-index: -1;
+}
+.news .news-item .news-details .read-more:hover:before {
+  width: 100%;
+  right: 0%;
+}
+.news .news-item .news-details .read-more:hover {
+  border-color: #9c9c9e;
+}
+/* SIDE BAR */
+.news .side-bar .side-section {
+  margin-bottom: 40px;
+}
+
+.news .side-bar h2 {
+  font-weight: bold;
+  color: #151515;
+  margin-bottom: 20px;
+}
+.news .side-bar .searh-from {
+  display: flex;
+  flex-flow: row wrap;
+}
+.news .side-bar .searh-from .form-control {
+  flex: 3;
+  // padding: 15px 10px;
+}
+.news .side-bar .searh-from .search-submit {
+  border-radius: 0;
+  background-color: orangered;
+  font-weight: bold;
+  flex: 1;
+  height: 100%;
+  color: #fff;
+}
+
+.news .side-bar .side-section .side-link {
+  padding: 10px 0;
+  color: #606060;
+  font-size: 17px;
+  transition: 0.5s ease-in-out;
+  border-bottom: 1px solid #e7e7e7;
+  display: block;
+  text-decoration: none;
+}
+.news .side-bar .side-section .side-link:hover {
+  color: orangered;
+}

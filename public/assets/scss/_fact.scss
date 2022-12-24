@@ -1,0 +1,101 @@
+/* 14. Fact Css */
+.fact-area {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top: 4px solid $theme-color;
+    &.pb-165 {
+        @include mq(xl) {
+            padding-bottom: 95px;
+        }
+        @include mq(lg) {
+            padding-bottom: 120px;
+        }
+        @include mq(md) {
+            padding-bottom: 95px;
+        }
+        @include mq(xs) {
+            padding-bottom: 95px;
+        }
+    }
+}
+.kfact {
+    border-right: 1px solid #3a3c3f;
+    & span {
+        display: block;
+        color: #a0a2a6;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    &:hover {
+        & .kfact-icon {
+            animation-name: wobble-vertical;
+            animation-duration: 1s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+        }
+    }
+    & .kfact-icon{
+        & i{
+            font-size: 60px;
+            color: $theme-color;
+        }
+    }
+}
+.kfact-last-child{
+    border-right: none;
+}
+.kfact-border {
+	@include mq(md) {
+        & .col-lg-3:nth-child(2) .kfact {
+            border: none;
+        }
+    }
+    @include mq(xs) {
+        & .col-lg-3 .kfact {
+            border: none;
+        }
+    }
+}
+.kfact-title {
+    font-size: 40px;
+    color: $white-color;
+}
+.fun-fact {
+    & span {
+        font-size: 14px;
+        font-weight: 700;
+        color: $white-color;
+        background: $theme-color;
+        padding: 13px 40px;
+        text-transform: uppercase;
+        display: inline-block;
+        letter-spacing: 1px;
+        position: relative;
+        &:before {
+            position: absolute;
+            content: '';
+            top: 0px;
+            left: -40px;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 40px 47px 0;
+            border-color: transparent #ff4751 transparent transparent;
+        }
+        &:after {
+            position: absolute;
+            content: '';
+            top: 0px;
+            right: -40px;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 47px 40px 0 0;
+            border-color: #ff4751 transparent transparent transparent;
+        }
+    }
+}
+.kfact-border .col-lg-3:last-child .kfact {
+    border-right: none;
+}

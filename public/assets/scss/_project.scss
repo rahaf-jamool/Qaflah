@@ -1,0 +1,424 @@
+/* 07. Project Css */
+.project-area {
+    position: relative;
+    background-image: url('../images/practice-area.webp');
+    background-size: cover;
+    background-position: center;
+}
+.kproject {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 20px 0;
+    
+    &:nth-child(even){
+        flex-flow: row-reverse wrap;
+    }
+
+    @include mq(xs){
+        &:nth-child(even){
+            flex-flow: row wrap;
+        }
+    }
+    @include mq(sm){
+        &:nth-child(even){
+            flex-flow: row wrap;
+        }
+    }
+
+    &-text {
+        padding: 35px 10px;
+        display: flex;
+        transition: all 500ms ease;
+        flex-flow: column;
+
+        @include mq(xxl){
+            padding: 25px 10px;
+        }
+        @include mq(lg){
+            padding: 20px 10px;
+        }
+        @include mq(xs){
+            padding: 20px 10px;
+        }
+        @include mq(sm){
+            padding: 30px 10px;
+        }
+        & span {
+            font-size: 12px;
+            font-weight: 700;
+            color: $white-color;
+            display: block;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 3px;
+        }
+        &-icon {
+            & .kproject-text-icon-arrow {
+                font-size: 18px;
+                color: $white-color;
+            }
+        }
+    }
+    & .kproject-image {
+        display:flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 0 10px;
+    }
+    & img {
+        -webkit-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        width: auto;
+        max-width: 450px;
+        border-radius: 30px;
+    }
+    
+    &:nth-child(even) .kproject-image{
+        justify-content: flex-start;
+    }
+    
+    @include mq(xs){
+        &:nth-child(even){
+            flex-flow: row wrap;
+        }
+    }
+    @include mq(sm){
+        &:nth-child(even){
+            flex-flow: row wrap;
+        }
+    }
+    &:hover {
+        & .kproject-text {
+        }
+        & img {
+            -webkit-filter: grayscale(0%);
+            -ms-filter: grayscale(0%);
+            -moz-filter: grayscale(0%);
+            transform: scale3d(1.05, 1.05, 1.05);
+        }
+    }
+}
+.swiper-slide-active {
+    & .kproject-text {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+.kproject-text-title {
+    font-size: 40px;
+    font-weight: 700;
+    color: $white-color;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0px;
+    padding-left: 70px;
+    position:relative;
+
+    &:before{
+        content:'';
+        position: absolute;
+        background: #ff4751;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 3px;
+        width: 60px;
+    }
+}
+.kproject-text-description{
+    color:white;
+    font-size: 15px;
+    line-height: 30px;
+}
+.project-area .slide-prev, .project-area .slide-next {
+	position: static;
+	font-size: 20px;
+	background: $white-color;
+	height: 65px;
+	width: 65px;
+	line-height: 65px;
+	color: $heading-color;;
+	border-radius: 50%;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	z-index: 3;
+	text-align: center;
+	margin: 0px;
+	vertical-align: middle;
+	@include transition(0.3s);
+    display: inline-block;
+    &:hover {
+        background: $theme-color;
+        color: $white-color;
+    }
+}
+.project-area .slide-next {
+    margin-left: 10px;
+}
+.project-area {
+    & .section-title-wrapper {
+        @include mq(xs){
+            margin-bottom: 25px;
+        }
+    }
+    & .lol {
+        @include mq(xs){
+            margin-bottom: 60px; 
+        }
+    }
+}
+
+//project style two start
+.kproject-text-2 {
+    left: 20px;
+    right: 20px;
+    padding: 35px 35px;
+    @include mq(xl){
+        padding: 25px 25px;
+    }
+    @include mq(lg){
+        padding: 15px 15px;
+    }
+    @include mq(md){
+        padding: 20px 20px;
+    }
+    @include mq(xs){
+        padding: 25px 25px;
+    }
+    @include mq(sm){
+        padding: 35px 35px;
+    }
+    & .kproject-text-icon {
+        margin-left: auto;
+    }
+    
+}
+.aportfolio-menu {
+    @include mq(md){
+        margin-bottom: 5px; 
+    }
+    @include mq(xs){
+        margin-bottom: 0px; 
+    }
+    & button {
+        font-size: 14px;
+        color: $body-color;
+        font-weight: 500;
+        border: none;
+        outline: none;
+        padding: 0px;
+        cursor: pointer;
+        background: none;
+        margin-right: 30px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        position: relative;
+        @include transition(0.3s);
+        @include mq(lg){
+            margin-right: 20px;
+        }
+        @include mq(xs){
+            margin-right: 20px;
+            margin-bottom: 10px;
+        }
+        &:before {
+            position: absolute;
+            content: '';
+            height: 6px;
+            width: 0%;
+            left: 0px;
+            bottom: 3px;
+            background-color: rgb(233, 235, 237);
+            z-index: -1;
+            opacity: 0;
+            visibility: hidden;
+            @include transition(0.3s);
+        }
+        &:last-child {
+            margin-right: 0px;
+        }
+        &:hover {
+            color: $theme-color;
+        }
+        &.active {
+            color: $theme-color;
+            &:before {
+                opacity: 1;
+                visibility: visible;
+                width: 100%;
+            }
+        }
+    }
+}
+
+.project-big-thumb {
+	margin-bottom: 58px;
+}
+.p-details-content {
+    padding-right: 10px;
+    @include mq(xs){
+        padding-right: 0px;
+    }
+	& h3 {
+        font-size: 36px;
+        line-height: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+        @include mq(xs){
+            font-size: 28px;
+        }
+    }
+    & p{
+        font-size: 16px;
+        line-height: 36px;
+        margin-bottom: 35px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}
+.sidebar-right{
+    background: $grey-color;
+    padding: 45px 50px;
+    & .sidebar-single{
+        margin-bottom: 35px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+        & label{
+            font-size: 14px;
+            color: #242629;
+            display: block;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 4px;
+        }
+        & span{
+            font-size: 18px;
+            line-height: 30px;
+        }
+    }
+}
+.portfolio__pagination {
+    & .link-btn-2{
+        text-transform: uppercase;
+        color: $heading-color;
+        font-weight: 700;
+        & i{
+            width: 65px;
+            height: 65px;
+            background: $grey-color;
+            border-radius: 50%;
+            line-height: 65px;
+            text-align: center;
+            font-size: 20px;
+            color: #242629;
+            margin-right: 10px;
+            @include transition(0.3s);
+            display: inline-block;
+            &:last-child{
+                margin-left: 10px;
+            }
+            &:hover{
+                background-color: #222222;
+                color: $grey-color;
+            }
+        }
+    } 
+}
+.pagination-border{
+    border-top: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
+}
+.swiper-slide-active .kproject-text {
+	opacity: 0;
+	visibility:hidden;
+}
+
+
+
+
+// vue project tab style start
+.aportfolio-active .card {
+    border: none;
+    padding: 0px;
+    background: none;
+    border-radius: 0px;
+}
+.aportfolio-active .card-header {
+    padding: 0;
+    border: none;
+    background: none;
+    border-radius: none;
+}
+.aportfolio-active .card-header-tabs {
+    margin: 0px;
+    padding: 0px;
+    border-radius: none;
+    border: none;
+    background: none;
+    justify-content: center;
+    margin-bottom: 55px;
+}
+.aportfolio-active {
+	& .nav-item {
+        margin: 0px 15px;
+        @include mq(lg){
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        @include mq(xs){
+            margin-left: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        & .nav-link {
+            font-size: 14px;
+            color: $body-color;
+            font-weight: 500;
+            border: none;
+            outline: none;
+            padding: 0px;
+            cursor: pointer;
+            background: none;
+            margin-right: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+            display: inline-block;
+            @include transition(0.3s);
+            &:before {
+                position: absolute;
+                content: '';
+                height: 6px;
+                width: 0%;
+                left: 0px;
+                bottom: 3px;
+                background-color: rgb(233, 235, 237);
+                z-index: -1;
+                opacity: 0;
+                visibility: hidden;
+                @include transition(0.3s);
+            }
+            &:last-child {
+                margin-right: 0px;
+            }
+            &:hover {
+                color: $theme-color;
+            }
+            &.active {
+                color: $theme-color;
+                &:before {
+                    opacity: 1;
+                    visibility: visible;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,301 @@
+/* 15. Benifit Css */
+.benefit-text {
+    position: relative;
+    & .benefit-subtitle {
+        font-size: 18px;
+        color: #1a1c1e;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+    }
+    & p {
+        font-size: 16px;
+        line-height: 2;
+    }
+}
+.benefit-img {
+    position: absolute;
+    top: -80px;
+    right: 0px;
+    & img{
+      -webkit-filter: grayscale(100%);
+      @include transition (.3s);
+    }
+    &:hover{
+      & img{
+        -webkit-filter: grayscale(0);
+      }
+    }
+    @include mq(xxl){
+      width: 45%;
+    }
+    @include mq(xl){
+      width: 45%;
+      top: 120px;
+    }
+    @include mq(lg){
+      position: relative;
+      margin-top: -110px;
+      & img {
+        width: 100%;
+  }
+}
+@include mq(md){
+  position: relative;
+  margin-top: -110px;
+  & img {
+    width: 100%;
+  }
+}
+@include mq(xs){
+  position: relative;
+  margin-top: -110px;
+  & img {
+    width: 100%;
+  }
+}
+}
+.benefit-img-level {
+    position: absolute;
+    left: -202px;
+    bottom: 202px;
+    transform: rotate(-90deg);
+    @include mq(xl){
+     left: -152px;
+     bottom: 152px;
+    }
+    @include mq(lg){
+      left: -120px;
+      bottom: 152px;
+     }
+     @include mq(md){
+      left: -120px;
+      bottom: 152px;
+     }
+     @include mq(xs){
+      display: none;
+     }
+    & span {
+        font-size: 14px;
+        font-weight: 700;
+        color: $white-color;
+        display: inline-block;
+        letter-spacing: 1.3px;
+        text-transform: uppercase;
+        padding: 15px 100px;
+        background: $theme-color;
+        @include mq(xl){
+          padding: 15px 50px;
+         }
+         @include mq(lg){
+          padding: 15px 50px;
+          }
+          @include mq(md){
+            padding: 15px 50px;
+          }
+    }
+}
+
+
+.progress_wrapper {
+    color: #1a1c1e;
+    display: inline-flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    & .afford {
+        display: inline-block;
+        margin-left: 25px;
+    }
+    &:is(.pbar_1) {
+        background-color: none;
+
+        & .progress_circle {
+            &:after {
+                border-color: $border-color;
+            }
+        }
+    }
+
+    &:is(.pbar_2) {
+        background-color: none;
+
+        & .progress_circle {
+            &:after {
+                border-color: $border-color;
+            }
+        }
+    }
+
+    &:is(.pbar_3) {
+        background-color: #65c9bb;
+
+        & .progress_circle {
+            &:after {
+                border-color: #83d7cb;
+            }
+        }
+    }
+}
+
+$borderWidth: 3px;
+$animationTime: .5s;
+$border-color-default: #6fbf6b;
+$border-color-fill: $theme-color;
+$size: 110px;
+$howManySteps: 100; //this needs to be even. 
+
+.progress_circle {
+  width: $size;
+  height: $size;
+  line-height: $size;
+  background: none;
+  margin: 0 auto;
+  box-shadow: none;
+  position: relative;
+  margin-bottom: 10px;
+  @include mq(xs){
+    height: 90px;
+    width: 90px;
+    line-height: 90px;
+}
+  &:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 2px solid;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scale(0.97);
+  }
+  > span {
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+  }
+  .progress-left {
+    left: 1px;
+  }
+  .progress-bar {
+    width: 100%;
+    height: 100%;
+    background: none;
+    border-width: $borderWidth;
+    border-style: solid;
+    position: absolute;
+    top: 0;
+    border-color: $border-color-fill;
+  }
+  .progress-left {
+    & .progress-bar {
+      left: 100%;
+      border-top-right-radius: calc($size/2);;
+      border-bottom-right-radius: calc($size/2);;
+      border-left: 0;
+      -webkit-transform-origin: center left;
+      transform-origin: center left;
+      //animation: loading-2 1.5s linear forwards 1.8s;
+    }
+  }
+  .progress-right {
+    right: 0;
+    & .progress-bar {
+      left: -100%;
+      border-top-left-radius: calc($size/2);;
+      border-bottom-left-radius: calc($size/2);;
+      border-right: 0;
+      -webkit-transform-origin: center right;
+      transform-origin: center right;
+      //animation: loading-1 1.8s linear forwards;
+    }
+  }
+  .progress-value {
+    display: flex;
+    border-radius: 50%;
+    font-size: 24px;
+    text-align: center;
+    line-height: 20px;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    font-weight: 400;
+    div {
+      //margin-top: 10px;
+    }
+    span {
+      font-size: 16px;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+  }
+}
+  
+  
+  .progress-value {
+    & .value {
+      font-size: 50px;
+      font-weight: 700;
+      color: #263b5c;
+      & span {
+        font-size: 20px;
+        display: inline-block;
+      }
+    }
+  }
+  .progress_text {
+      padding-left: 18px;
+      font-size: 16px;
+      margin-top: 20px;
+    display: inline-block;
+  }
+  
+  
+  /* This for loop creates the necessary css animation names 
+  Due to the split circle of progress-left and progress right, we must use the animations on each side. 
+  */
+  @for $i from 1 through $howManySteps {
+      $stepName: ($i*calc(100 / $howManySteps));
+  
+      //animation only the left side if below 50%
+      @if $i <= calc($howManySteps/2) { 
+          .progress_circle[data-percentage="#{$stepName}"] {
+              .progress-right .progress-bar {
+                   animation: loading-#{$i} $animationTime linear forwards;
+              }
+              .progress-left .progress-bar {animation: 0;}
+          }
+      }
+      //animation only the right side if above 50%
+      @if $i > calc($howManySteps/2)  {  
+          .progress_circle[data-percentage="#{$stepName}"] {
+              .progress-right .progress-bar {
+                  animation: loading-#{calc($howManySteps/2)} $animationTime linear forwards; //set the animation to longest animation
+              }
+              .progress-left .progress-bar {
+        animation: loading-#{$i - calc($howManySteps/2)} $animationTime linear forwards $animationTime;
+      }
+          }
+      }
+  }
+  
+  //animation
+  @for $i from 1 through calc($howManySteps/2) { 
+      $degrees: calc(180/calc($howManySteps/2));
+      $degrees: ($degrees*$i);
+      @keyframes loading-#{$i}{
+      0%{
+          -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+      }
+      100%{
+          -webkit-transform: rotate($degrees);
+              transform: rotate(#{$degrees}deg);
+      }
+      }
+  }

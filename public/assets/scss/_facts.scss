@@ -1,0 +1,24 @@
+.fact{
+  display:flex;
+  flex-flow: column;
+  align-items: center;
+  flex:1;
+
+  img{
+    max-width: 100%;
+  }
+
+  &-text{
+    display:flex;
+    flex-flow: column;
+    align-items: center;    
+  }
+
+  &-title{
+    color: white;
+  }
+
+  &-value{
+    color: white;
+  }
+}

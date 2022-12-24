@@ -1,0 +1,79 @@
+/* photo-gallery */
+.photo-gallery {
+  padding-bottom: 40px;
+}
+.photo-gallery .text-arrival {
+  padding: 20px 0;
+  text-align: center;
+  color: #1c2b7f;
+}
+.photo-gallery .text-arrival img {
+  width: 150px;
+}
+.photo-gallery .item {
+  text-align: center;
+  margin: 0 20px;
+  transition: 0.8s ease-out;
+}
+.photo-arrivals {
+  padding: 20px 30px;
+}
+.photo-arrivals .item {
+  height: 400px;
+  text-align: center;
+  margin: 0 20px;
+  transition: 0.8s ease-out;
+}
+.photo-arrivals .item:hover {
+  cursor: pointer;
+  opacity: 1.2s;
+}
+.photo-arrivals .item .title {
+  padding: 30px 0;
+  background: #fef5f5;
+  transition: 0.8s ease-out;
+}
+.photo-arrivals .item:hover .title {
+  background: #f2b914;
+}
+.photo-arrivals .item .image {
+  width: 100%;
+  height: 100%;
+  transition: 0.8s ease-out;
+}
+.photo-arrivals .item:hover .image {
+  opacity: 0.3;
+}
+.photo-arrivals .item .image figure {
+  position: relative;
+  margin: unset;
+}
+
+.photo-arrivals .item .image figure figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% - 2rem);
+  height: calc(100% - 2rem);
+  margin: 1rem;
+  text-align: center;
+  display: grid;
+  align-content: center;
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  pointer-events: none;
+}
+.photo-arrivals .item figure figcaption span {
+  background: #fff;
+  width: 80px;
+  padding: 20px;
+  margin: auto;
+}
+.photo-arrivals .item:hover figure figcaption {
+  opacity: 0.9;
+  transform: scale(1);
+}
+.photo-arrivals .item .image img {
+  width: 100%;
+}

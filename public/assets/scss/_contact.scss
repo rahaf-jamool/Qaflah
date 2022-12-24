@@ -1,0 +1,81 @@
+/* 18. Contact Css */
+.home.contact-area{
+    background-color: #494949;
+}
+.single-contact-info{
+    border-bottom: 1px solid $border-color;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    &:hover{
+        & .contact-info-icon{
+            & a{
+                background-color: $theme-color;
+                color: $white-color;
+            }
+        }
+    }
+    &:last-child{
+        border: none;
+    }
+}
+.contact-info-icon {
+    margin-right: 20px;
+    & a{
+        height: 65px;
+        width: 65px;
+        background: $grey-color;
+        display: inline-block;
+        line-height: 65px;
+        text-align: center;
+        border-radius: 50%;
+        font-size: 20px;
+        color: $theme-color;
+        @include transition(.3s);
+        &:hover{
+            background-color: #222;
+            color: $white-color;
+        }
+    }
+}
+.contact-info-text{
+    & span{
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: 500;
+        margin-bottom: 5px;
+        display: inline-block;
+    }
+    & h5{
+        font-weight: 500;
+        font-size: 20px;
+        color: $theme-color;
+        @include mq(xs){
+            font-size: 16px;
+        }
+    }
+}
+
+.contact-form {
+    & input, textarea {
+        width: 100%;
+        padding: 25px;
+        color: #fff;
+        border: none;
+        background: #f2f3f5;
+        font-size: 14px;
+        border: 1px solid #646464;
+        background: #494949;
+        @include transition (.3s);
+        &:focus{
+            border-color: $theme-color;
+        }
+    }
+}
+#contact-map {
+    & iframe {
+        height: 555px;
+        width: 100%;
+        margin-bottom: -6px;
+    }
+}

@@ -1,0 +1,829 @@
+
+/* 06. About Css */
+.about-area{
+    background-color: #4e4d4d;
+}
+.vision-area{
+    position: relative;
+    background-image: url('../images/9-1.webp');
+    background-size: cover;
+    background-position: center;
+}
+.kabout-img {
+    position: relative;
+    & img {
+        width: 100%;
+    }
+    @include mq(xl){
+        margin-right: 20px;   
+    }
+    @include mq(lg){
+        margin-right: 20px;
+    }
+    @include mq(md){
+        margin-right: 0px;
+        margin-bottom: 125px;
+    }
+    @include mq(xs){
+        margin-right: 0px;
+        margin-bottom: 125px;
+    }
+    &-shape {
+        width: 40px;
+        height: 560px;
+        background: $white-color;
+        border: 8px solid $theme-color;
+        position: absolute;
+        top: 2px;
+        left: -30px;
+        z-index: -1;
+        @include mq(xs){
+            display: none;
+        }
+    }
+    &-small {
+        bottom: -80px;
+        z-index: 5;
+        left: -140px;
+        display: inline-block;
+        position: absolute;
+        &-icon {
+            position: absolute;
+            top: -60px;
+            right: -60px;
+            height: 150px;
+            width:150px;
+            text-align: center;
+            border: 1px dashed rgba(255, 255, 255,0.3);
+            padding: 18px;
+            display: inline-block;
+            border-radius: 50%;
+            @include transition(0.3s);
+            & span {
+                height: 114px;
+                width: 114px;
+                line-height: 75px;
+                display: inline-block;
+                background: $white-color;
+                border-radius: 50%;
+                & img {
+                    vertical-align: middle;
+                    -webkit-filter: grayscale(0%);
+                    -ms-filter: grayscale(0%);
+                    -moz-filter: grayscale(0%);
+                }
+                & i{
+                    font-size: 60px;
+                    color: $theme-color;
+                    margin-top: 10px;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+    & img {
+        -webkit-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        @include transition(0.3s);
+        &:hover {
+            -webkit-filter: grayscale(0%);
+            -ms-filter: grayscale(0%);
+            -moz-filter: grayscale(0%);
+        }
+    }
+}
+.kabout-img:hover {
+    & .kabout-img-small-icon {
+        animation-name: wobble-vertical;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+    }
+}
+.play_btn::after, .play_btn::before {
+	position: absolute;
+	left: 0;
+	top: 0;
+	content: "";
+	border-radius: 50%;
+	width: 100%;
+	height: 100%;
+	border: 1px dashed rgba(255, 255, 255,0.7);
+	animation-name: popupBtn;
+	animation-duration: 1.8s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+.play_btn::before {
+	animation-delay: 0.8s;
+}
+@keyframes popupBtn{
+    0% {
+        transform: scale(1);
+        opacity: .6;
+    }
+    50% {
+        transform: scale(1.6);
+        opacity: 0.3;
+    }
+    100% {
+        transform: scale(2.2);
+        opacity: 0;
+    }
+}
+
+.kabout {
+    & .section-title-wrapper {
+        & p {
+            line-height: 2;
+            font-size: 16px;
+            color:#fff;
+        }
+    }
+    & ul {
+        & li {
+            font-size: 17px;
+            font-weight: 500;
+            color: $heading-color;
+            margin-bottom: 15px;
+            list-style: none;
+            display: flex;
+            &:last-child {
+                margin-bottom: 0px;
+            }
+            & i {
+                margin-right: 15px;
+                color: $theme-color;
+                margin-top: 1px;
+            }
+        }
+    }
+}
+.kabout-service {
+    & p {
+        font-size: 16px;
+    }
+}
+.kabout-service-title {
+    font-size: 18px;
+    padding-left: 40px;
+    position: relative;
+    margin-bottom: 18px;
+    &:before {
+        position: absolute;
+        content: '';
+        height: 3px;
+        width: 19px;
+        background: $theme-color;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0px;
+    }
+}
+
+
+//why we area start
+.why-we {
+    &.pt-120 {
+        @include mq(lg) {
+            padding-top: 115px;
+        }
+        @include mq(md) {
+            padding-top: 115px;
+        }
+        @include mq(xs) {
+            padding-top: 115px;
+        }
+    }
+    &.pb-70 {
+        @include mq(lg) {
+            padding-bottom: 65px;
+        }
+        @include mq(md) {
+            padding-bottom: 65px;
+        }
+        @include mq(xs) {
+            padding-bottom: 65px;
+        }
+    }
+    &.pb-125 {
+        @include mq(md) {
+            padding-bottom: 115px;
+        }
+        @include mq(xs) {
+            padding-bottom: 115px;
+        }
+    }
+}
+.why-we-left {
+    @include mq(xs){
+        margin-right: 0px;
+    }
+    & p {
+        font-size: 18px;
+        line-height: 2;
+    }
+}
+.why-tabs {
+    width: 100%;
+    border-bottom: 3px solid $theme-color;
+    display: flex;
+    & .nav-item {
+        flex-basis: 33.3333%;
+        @include mq(xs){
+            flex-basis: 100%;
+            text-align: left;
+        }
+        & .nav-link {
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            display: inline-block;
+            color: $heading-color;
+            letter-spacing: 1px;
+            border: none;
+            outline: none;
+            background: transparent;
+            cursor: pointer;
+            display: block;
+            width: 100%;
+            text-align: center;
+            padding: 17px 10px 13px 10px;
+            @include mq(xs){
+               text-align: left;
+               padding-left: 20px;
+            }
+            &.active {
+                color: $white-color;
+                background: $theme-color;
+            }
+        }
+    }
+}
+
+.why-tab-img {
+    width: 200px;
+    float: left;
+    margin-right: 30px;
+    @include mq(xs){
+        float: inherit;
+        margin-right: 0px;
+        margin-bottom: 30px;
+        width: inherit;
+    }
+    & img {
+        -webkit-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        &:hover {
+            -webkit-filter: grayscale(0%);
+            -ms-filter: grayscale(0%);
+            -moz-filter: grayscale(0%);
+        }
+    }
+}
+.why-tab-list {
+    & ul {
+        & li {
+            list-style: none;
+            font-size: 18px;
+            font-weight: 500;
+            color: $heading-color;
+            margin-bottom: 15px;
+            display: flex;
+            &:last-child {
+                margin-bottom: 0px;
+            }
+            & i {
+                font-size: 16px;
+                color: $theme-color;
+                margin-right: 15px;
+                margin-top: 2px;
+            }
+        }
+    }
+}
+.why-we {
+    & .common-shape-wrapper {
+            left: 0px;
+            right: auto;
+            border-radius: 0px;
+            border-top-right-radius: 100%;
+        & .common-shape-inner {
+            left: 0px;
+            right: auto;
+            border-radius: 0px;
+            border-top-right-radius: 100%;
+        }
+    }
+}
+
+// why we vue tab start
+.why-we-tab {
+    border: none;
+    background: none;
+    padding: 0px;
+    @include mq(lg){
+        margin-bottom: 50px;
+        overflow: hidden;
+    }
+    @include mq(md){
+        margin-bottom: 50px;
+        overflow: hidden;
+    }
+    @include mq(xs){
+        margin-bottom: 50px;
+        overflow: hidden;
+    }
+    & p {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 2.1;
+    }
+    & .card-header {
+        padding: 0px;
+        background: none;
+        border: none;
+        & .nav-tabs {
+            width: 100%;
+            border-bottom: 3px solid #ff4751;
+            display: flex;
+            margin-bottom: 30px;
+            & li {
+                flex-basis: 33.3333%;
+                @include mq(xs){
+                    flex-basis: 100%;
+                    text-align: left;
+                }
+                & .nav-link {
+                    font-size: 14px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    display: inline-block;
+                    color: $heading-color;
+                    letter-spacing: 1px;
+                    border: none;
+                    outline: none;
+                    background: transparent;
+                    cursor: pointer;
+                    display: block;
+                    width: 100%;
+                    text-align: center;
+                    padding: 17px 10px 13px 10px;
+                    @include mq(xs){
+                       text-align: left;
+                       padding-left: 20px;
+                    }
+                    &.active {
+                        color: $white-color;
+                        background: $theme-color;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+//intro area style start here
+
+.intro-bg {
+    position: absolute;
+    z-index: -1;
+    @include mq(lg){
+        height: 100%;
+        width: 100%;
+    }
+    @include mq(md){
+        height: 100%;
+        width: 100%;
+    }
+    @include mq(xs){
+        height: 100%;
+        width: 100%;
+    }
+}
+.intro-space {
+    @include mq(lg){
+        padding-bottom: 120px;
+    }
+    @include mq(md){
+        padding-bottom: 120px;
+    }
+    @include mq(xs){
+        padding-bottom: 120px;
+    }
+}
+.kintro-img-text {
+    display: flex;
+    align-items: center;
+    padding: 35px 40px 20px 40px;;
+    background:$white-color;
+    position: absolute;
+    bottom: 120px;
+    left: -120px;
+    @include mq(xxl){
+        left: -90px;
+    }
+    @include mq(xl){
+        left: 0px;
+    }
+    @include mq(lg){
+        left: 0px;
+    }
+    @include mq(md){
+        left: 0px;
+    }
+    @include mq(xs){
+        left: 0px;
+        bottom: 0px;
+        padding: 20px;
+    }
+    & .kintro-img-text-icon{
+        & img {
+            -webkit-filter: grayscale(0%);
+        }
+        & i{
+            font-size: 60px;
+            color: $theme-color;
+        }
+    }
+    & h5 {
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 900;
+        margin-bottom: 0px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+}
+.kintro-img {
+    position: relative;
+    &:hover {
+        & .kintro-img-text-icon {
+            & i {
+                animation-name: wobble-vertical;
+                animation-duration: 1s;
+                animation-timing-function: ease-in-out;
+                animation-iteration-count: infinite;
+            }
+        }
+        & i{
+            -webkit-filter: grayscale(0);
+        }
+    }
+    & img{
+        -webkit-filter: grayscale(100%);
+        @include transition (.3s);
+    }
+}
+.kintro-img > img {
+	@include mq(md){
+        width: 100%;
+    }
+    @include mq(xs){
+        width: 100%;
+    }
+}
+.kintro-text {
+    @include mq(xl){
+        margin-left: 50px;
+    }
+    @include mq(lg){
+        margin-left: 20px;
+    }
+    @include mq(md){
+        margin-left: 00px;
+    }
+    @include mq(xs){
+        margin-left: 0px;
+    }
+    & .section-title-wrapper {
+        & p {
+            font-size: 18px;
+            font-weight: 700;
+            font-style: italic;
+            color: $theme-color;
+            line-height: 1.9;
+        }
+        & h2 {
+            @include mq(lg){
+                font-size: 44px;
+            }
+        }
+    }
+    & p {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.9;
+    }
+}
+
+.kservice-author-sign-2 {
+    & span {
+        color: $heading-color;
+    }
+}
+
+//intro skill css
+.skill--title__wrapper {
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & span {
+        color: $body-color;
+    }
+}
+.skill--title {
+    font-size: 16px;
+    display: inline-block;
+    margin-bottom: 0px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.skill__wrapper {
+    & .progress {
+        height: 6px;
+        border-radius: 0px;
+        background: $border-color;
+    }
+}
+.mission-img-text {
+	position: absolute;
+	left: 30px;
+	bottom: 0px;
+	background: $white-color;
+	padding: 40px 50px;
+	width: 330px;
+    @include mq(xs){
+        padding: 20px 30px;
+        width: 250px;
+    }
+    & h4{
+        font-size: 20px;
+        line-height: 30px;
+        color: #242629;
+        font-weight: 700;
+        font-family: $body-fonts;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+        @include mq(xs){
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+    }
+    & a{
+        font-size: 12px;
+        color: $theme-color;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 2px;
+    }
+}
+.choose-left {
+	& p{
+        font-size: 16px;
+        line-height: 30px;
+        margin-bottom: 35px;
+    }
+}
+.choose-right .accordion-button:focus {
+	z-index: 3;
+	border: none;
+	outline: 0;
+	box-shadow: none;
+}
+.choose-right .accordion-item {
+	border: 1px solid $border-color;
+    margin-bottom: 20px;
+}
+.choose-right .accordion-button {
+	padding: 25px;
+    font-size: 16px;
+    color: #242629;
+    font-weight: 700;
+    padding-right: 35px;
+}
+.choose-right .accordion-button:not(.collapsed) {
+	color: $theme-color;
+	background-color: $white-color; 
+	box-shadow: none;
+}
+.choose-right .accordion-body {
+	padding: 0px 25px 20px 25px;
+    margin-top: -10px;
+}
+.choose-right .accordion-body p {
+	font-size: 16px;
+	line-height: 36px;
+	color: $body-color;
+}
+.choose-right .accordion-button:not(.collapsed)::after {
+    background: none;
+	transform: rotate(180deg);
+    color: #242629;
+    content: "\f068";
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    font-family: "Font Awesome 5 Pro";
+    @include mq(xs){
+        right: 20px;
+    }
+}
+.choose-right .accordion-button::after {
+    background: none;
+    color: $theme-color;
+    content: "\f067";
+    position: absolute;
+    right: 20px;
+    top: 25px;
+    font-family: "Font Awesome 5 Pro";
+    @include mq(xs){
+        right: 15px;
+    }
+}
+.provide-thumb{
+    position: relative;
+    margin-right: 30px;
+    @include mq(md){
+        margin-bottom: 70px;
+    }
+    @include mq(xs){
+        margin-bottom: 70px;
+        margin-right: 0px;
+    }
+    &::before{
+        height: 15px;
+        width: 100%;
+        bottom: -25px;
+        left: 0px;
+        background: $theme-color;
+        position: absolute;
+        content: "";
+        z-index: 1;
+    }
+    &::after{
+        height: 10px;
+        width: 100%;
+        bottom: -10px;
+        left: 0px;
+        background: $white-color;
+        position: absolute;
+        content: "";
+        z-index: 1;
+    }
+    & img{
+        @include mq(md){
+            width: 100%;
+        }
+        @include mq(xs){
+            width: 100%;
+        }
+    }
+}
+.provide-content{
+    padding-left: 70px;
+    @include mq(xl){
+        padding-left: 50px;
+    }
+    @include mq(lg){
+        padding-left: 0px;
+    }
+    @include mq(md){
+        padding-left: 0px;
+    }
+    @include mq(xs){
+        padding-left: 0px;
+    }
+    & .section-title-wrapper {
+        & p {
+            font-size: 20px;
+            font-weight: 700;
+            font-style: italic;
+            color: $theme-color;
+            line-height: 1.9;
+            @include mq(lg){
+                font-size: 18px;
+            }
+        }
+        & h2 {
+            @include mq(lg){
+                font-size: 44px;
+            }
+        }
+    }
+    & p {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 1.9;
+    }
+}
+
+
+
+.faq-wrapper-2 .choose-right .accordion-button {
+	padding: 27px 25px;
+}
+.faq-form-title {
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+}
+
+.mission-area.pt-120 {
+    @include mq(md){
+        padding-top: 115px;
+    }
+    @include mq(xs){
+        padding-top: 115px;
+    }
+}
+
+
+
+// vue accordion start here
+
+.choose-right .btn-info:focus {
+	z-index: 3;
+	border: none;
+	outline: 0;
+	box-shadow: none;
+}
+.choose-right .card {
+	border: 1px solid $border-color;
+    margin-bottom: 20px;
+}
+.choose-right .btn-info {
+	padding: 25px;
+    font-size: 16px;
+    color: $heading-color;
+    font-weight: 700;
+    padding-right: 35px;
+    border: none;
+    background: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+.choose-right .btn-info:not(.collapsed) {
+	color: $theme-color;
+	background-color: $white-color; 
+	box-shadow: none;
+}
+.choose-right .card-body p {
+	font-size: 16px;
+	line-height: 36px;
+	color: $body-color;
+}
+.choose-right .btn-info::after {
+    background: none;
+    color: $heading-color;
+    content: "+";
+    position: absolute;
+    top: 36px;
+    font-size: 28px;
+    right: 20px;
+    line-height: 0;
+    font-weight: 300;
+    @include mq(xs){
+        right: 15px;
+    }
+}
+.choose-right .btn-info:not(.collapsed)::after {
+    color: $theme-color;
+    content: "-";
+    top: 38px;
+    font-size: 35px;
+    @include mq(xs){
+        right: 20px;
+    }
+}
+.choose-right .btn-check:focus + .btn-info, .choose-right .btn-info:focus {
+	background-color: none;
+    border: none;
+    box-shadow: none;
+}
+.choose-right .btn-info:hover {
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+.choose-right .card-header {
+    padding: 0px 0px;
+    border: none;
+    background: $white-color;
+
+}
+.choose-right .card-body {
+	padding: 0px 25px 20px 25px;
+	margin-top: -10px;
+}
+.faq-wrapper-right .btn-info {
+    padding-top: 27px;
+    padding-bottom: 27px;
+}

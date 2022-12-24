@@ -1,0 +1,494 @@
+/* 04. Service Css */
+.service-area {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @include mq(md){
+        padding-bottom: 160px;
+        padding-top: 115px;
+    }
+    @include mq(xs){
+        padding-top: 115px;
+        padding-bottom: 160px;
+    }
+}
+.service-area.service-area2 {
+    @include mq(md) {
+        padding-bottom: 100px;
+    }
+    @include mq(xs) {
+        padding-bottom: 100px;
+    }
+}
+.kservice {
+    position: relative;
+    z-index: 1;
+    @include transition(0.3s);
+    &:before {
+        position: absolute;
+        content: '';
+        height: 70px;
+        width: 140px;
+        background: $white-color;
+        opacity: 0.02;
+        z-index: -1;
+        left: 50%;
+        top: 0px;
+        transform: translateX(-50%);
+        border-bottom-left-radius: 100px;
+        border-bottom-right-radius: 100px
+    }
+    &:hover {
+        background: $theme-color;
+        &:before {
+            opacity: 0.102; 
+        }
+       .kservice-icon {
+        animation-name: wobble-vertical;
+        animation-duration: 1s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 1;
+        & i{
+            color: $white-color;
+        }
+       }
+    }
+}
+.kservice-icon {
+    display: inline-block;
+    & img:last-child {
+        display: none;
+    }
+    & i{
+        font-size: 60px;
+        color: $theme-color;
+    }
+}
+.kservice-text-subtitle {
+    font-size: 14px;
+    color: $white-color;
+    position: relative;
+    text-transform: uppercase;
+    display: inline-block;
+    letter-spacing: 2px;
+    z-index: 1;
+    &:before {
+        position: absolute;
+        content: '';
+        height: 6px;
+        width: 100%;
+        left: 0px;
+        bottom: 1px;
+        background: $theme-color;
+        z-index: -1;
+    }
+}
+.kservice-text-title {
+    font-size: 60px;
+    color: $white-color;
+    font-weight: 900;
+    text-transform: uppercase;
+    @include mq(lg){
+        font-size: 56px; 
+    }
+    @include mq(xs){
+        font-size: 42px;
+    }
+}
+.kservice-text {
+    & p {
+        color: #a0a2a6;
+        line-height: 2;
+        font-size: 18px;
+    }
+}
+.kservice-author {
+    display: flex;
+    &-img {
+        padding: 6px;
+        border: 2px solid $theme-color;
+        border-radius: 50%;
+        & img {
+            border-radius: 50%;
+        }
+    }
+    &-sign {
+        & span {
+            font-size: 24px;
+            font-family: 'Reey';
+            font-weight: 400;
+            color: $white-color;
+            display: inline-block;
+            margin-top: 13px;
+            @include mq(xs){
+                font-size: 20px;
+            }
+        }
+    }
+}
+.kservice-content-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: $white-color;
+    line-height: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin: 0px;
+}
+.kservice {
+    background: #1a1c1e;
+    padding: 33px 35px 45px 35px;
+    min-height: calc(100% - 20px);
+    @include mq(sm){
+        padding: 33px 40px 45px 40px;
+    }
+}
+.cta-bg {
+    display: flex;
+    align-items: center;
+    padding: 65px 70px;
+    @include mq(lg){
+        padding: 40px 30px;
+    }
+    @include mq(md){
+        display: inherit;   
+    }
+    @include mq(xs){
+        display: inherit;
+        padding: 25px 30px; 
+    }
+    & .cta-number {
+        flex-basis: 36%;
+        //margin-bottom: -20px;
+    }
+    & .cta-description {
+        flex-basis: 37%;
+        margin-left: 65px;
+        position: relative;
+        padding-left: 60px;
+        position: relative;
+        @include mq(xl){
+            margin-left: 50px;
+            padding-left: 50px;   
+        }
+        @include mq(lg){
+           padding-left: 30px;
+           margin-left: 0px; 
+        }
+        @include mq(md){
+           padding-left: 0px;
+           margin: 0px;
+           margin-top: 20px;
+           margin-bottom: 20px;
+        }
+        @include mq(xs){
+            padding-left: 0px;
+            margin: 0px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+         }
+        &:before {
+            height: 80px;
+            width: 1px;
+            background: $white-color;
+            opacity: 0.2;
+            position: absolute;
+            content: '';
+            top: -10px;
+            left: 0px;
+            @include mq(md){
+                display: none;
+            }
+            @include mq(xs){
+                display: none;
+            }
+        }
+        & p {
+            font-size: 16px;
+            font-weight: 500;
+            color: #ffd6d6;
+            line-height: 30px;
+            margin: 0px;
+        }
+    }
+    & .cta-btn {
+        flex-basis: 27%;
+        text-align: right;
+        @include mq(md){
+            text-align: left;
+        }
+        @include mq(xs){
+            text-align: left;
+        }
+    }
+}
+.cta-number {
+    &-icon {
+        float: left;
+        @include mq(xs){
+            float: inherit;
+            margin-bottom: 15px;
+        }
+        @include mq(sm){
+            float: left;
+            margin-bottom: 0px;
+        }
+        & img {
+            margin-top: 4px;
+        }
+        & i{
+            font-size: 60px;
+            color: $white-color;
+        }
+    }
+    &-text {
+        & span {
+            font-size: 12px;
+            color: #ffd6d6;
+            display: inline-block;
+            letter-spacing: 1px;
+            margin-top: 3px;
+        }
+        & h3 {
+            font-size: 40px;
+            color: $white-color;
+            font-weight: 700;
+            margin-bottom: 0px;
+            @include mq(xl){
+               font-size: 36px;   
+            }
+            @include mq(lg){
+                font-size: 30px; 
+            }
+            @include mq(xs){
+                font-size: 36px;
+            }
+        }
+    }
+}
+br {
+    @include mq(xs){
+        display: none;
+    }
+}
+
+//service style two start
+
+.service-2 {
+    @include mq(lg){
+        padding-top: 110px;
+    }
+    @include mq(md){
+        padding-top: 110px;
+    }
+    @include mq(xs){
+        padding-top: 110px;
+    }
+}
+.kservice-text-2 {
+    padding:50px 50px 50px 50px;
+    padding-top: 45px;
+    border: 2px solid $border-color;
+    border-bottom: 0px;
+    @include transition(0.3s);
+    position: relative;
+    z-index: 1;
+    @include mq(xl){
+        padding: 40px 45px 45px 45px;
+    }
+    @include mq(lg){
+        padding: 15px 20px 20px 20px;
+    }
+    @include mq(sm){
+        padding: 15px 25px 20px 25px;
+    }
+    &:before {
+        position: absolute;
+        content: '';
+        height: 100%;
+        width: 0%;
+        top: 0px;
+        left: 0px;
+        background: $heading-color;
+        @include transition(0.3s);
+        z-index: -1;
+    }
+    & span {
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        display: block;
+        margin-bottom: 3px;
+    }
+}
+.kservice-title-2 {
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    @include transition(0.3s);
+    text-transform: uppercase;
+    @include mq(xs){
+        br {
+            display: inline-block;
+        }
+    }
+}
+.kservice-img-2 {
+    overflow: hidden;
+    & img {
+        -webkit-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+        @include mq(xs){
+            width: 100%;
+        }
+    }
+}
+.kservice-2 {
+    &:hover {
+        & .kservice-text-2 {
+            border-color: $heading-color;
+            &:before {
+                width: 100%;
+            }
+        }
+        & .kservice-title-2 {
+            color: $white-color;
+        }
+        & img {
+            animation-name: animation-pulse-shrink;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            display: inline-block;
+        }
+        & i{
+            animation-name: animation-pulse-shrink;
+            animation-duration: 1s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            display: inline-block;
+        }
+        & .kservice-img-2 {
+            & img {
+                animation: none;
+                transform: scale3d(1.1, 1.1, 1.1);
+                -webkit-filter: grayscale(0%);
+                -ms-filter: grayscale(0%);
+                -moz-filter: grayscale(0%);
+            }
+        }
+    }
+}
+.kservice-text-2 {
+    & img {
+        height: 55px;
+    }
+    & i{
+        font-size: 60px;
+        color: $theme-color;
+    }
+}
+
+.service-title {
+	font-size: 36px;
+	margin-bottom: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.develop-wrapper{
+    & .develop-thumb{
+        margin-bottom: 35px;
+    }
+    & .develop-content{
+        padding-right: 20px;
+        @include mq(xs){
+            padding-right: 0px;
+        }
+        & p{
+            font-size: 16px;
+            line-height: 36px;
+        }
+    }
+}
+.plan-content {
+    & h4{
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+        color: $heading-color;
+    }
+    & p{
+        font-size: 16px;
+        line-height: 34px;
+        margin-bottom: 35px;
+    }
+    & li{
+        list-style: none;
+        font-size: 18px;
+        position: relative;
+        margin-bottom: 10px;
+        display: flex;
+        & i {
+            font-size: 16px;
+            font-weight: 400;
+            color: $theme-color;
+            margin-right: 10px;
+        }
+    }
+}
+.widget_categories{
+    padding: 45px 30px 30px 35px;
+    background: $grey-color;
+    @include mq(lg){
+        padding: 45px 20px 30px 20px;
+    }
+    @include mq(xs){
+        padding: 30px 10px 15px 10px;
+    }
+    & li{
+        list-style: none;
+        position: relative;
+        & a{
+            font-size: 16px;
+            line-height: 26px;
+            color: $body-color;
+            padding: 14px 20px;
+            display: block;
+            @include transition(0.3s);
+            & i {
+                font-size: 18px;
+                color: $theme-color;
+                float: right;
+                opacity: 0;
+                visibility: hidden;
+                @include transition(0.3s);
+            }
+        }
+        &:hover{
+            background: $white-color;
+            & i {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+    }
+}
+.bs-widget-title {
+	font-size: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.widget-btn{
+    & .theme-btn{
+        width: 100%;
+        font-size: 16px;
+        text-align: center;
+        padding: 0px 40px;
+    }
+}

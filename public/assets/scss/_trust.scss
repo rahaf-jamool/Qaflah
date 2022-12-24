@@ -1,0 +1,61 @@
+/* 11. Trust Css */
+.trust-area {
+    position: relative;
+    @include mq(md){
+        padding-top: 110px;
+    }
+    @include mq(xs){
+        padding-top: 110px;
+    }
+    & img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-filter: grayscale(100%);
+        -ms-filter: grayscale(100%);
+        -moz-filter: grayscale(100%);
+    }
+}
+.ktrust-title {
+    font-size: 60px;
+    color: $white-color;
+    font-weight: 900;
+    text-transform: uppercase;
+    @include mq(md){
+        font-size: 42px;
+    }
+    @include mq(xs){
+        font-size: 36px;
+    }
+}
+.trust-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    z-index: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    transform: scale(1);
+    -webkit-transition: all 8s linear 0s;
+    -moz-transition: all 8s linear 0s;
+    -o-transition: all 8s linear 0s;
+    transition: all 8s linear 0s;
+    -webkit-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+}
+.trust-bg::before {
+	position: absolute;
+    content: '';
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	background: rgba(0,0,0,0.2);
+}

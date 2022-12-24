@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: UbuntuMedium;
+}
+
+/* Start adding fonts */
+@font-face {
+  font-family: Ubuntu;
+  src: url("~assets/fonts/Ubuntu/Ubuntu-Regular.ttf");
+}
+@font-face {
+  font-family: UbuntuMedium;
+  src: url("~assets/fonts/Ubuntu/Ubuntu-Medium.ttf");
+}
+@font-face {
+  font-family: UbuntuBold;
+  src: url("~assets/fonts/Ubuntu/Ubuntu-Bold.ttf");
+}
+/* End adding fonts */

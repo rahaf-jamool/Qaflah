@@ -1,0 +1,191 @@
+/* mobile menu */
+.side-mobile-menu {
+	position: fixed;
+	overflow-y: auto;
+	top: 0;
+	right: -350px;
+    visibility: hidden;
+	opacity: 0;
+	width: 300px;
+	padding: 30px 30px;
+	height: 100%;
+	background: #25262A;
+	z-index: 1020;
+	transition: all .6s cubic-bezier(.785,.135,.15,.86);
+	box-shadow: -5px 0 20px -5px rgba(0,0,0,.5);
+}
+.side-mobile-menu.active {
+	right: 0px;
+	visibility: visible;
+	opacity: 1;
+}
+.menu-bar .bars {
+	display: inline-block;
+	width: 50px;
+	background: none;
+	height: 50px;
+	text-align: center;
+	line-height: 46px;
+	border: 0;
+	font-size: 24px;
+	color: $white-color;
+    background: rgba(0,0,0,0.4);
+}
+.close-mobile-menu {
+	color: $white-color;
+	position: relative;
+	z-index: 2;
+	font-size: 22px;
+	top: -10px;
+	left: 0;
+	border: 0px;
+	background: none;
+	outline: none;
+	padding: 0;
+}
+.close-mobile-menu:hover {
+  color: $white-color;
+}
+.mm-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.mm-menu ul li {
+  display: block;
+}
+.mm-menu ul li:hover > a {
+  padding-left: 3px;
+  color: $white-color;
+}
+.mm-menu ul li a {
+  padding: 12px 0;
+  display: block;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  font-size: 14px;
+  color: $white-color;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: relative;
+}
+.mm-menu ul li a.active {
+  padding-left: 3px;
+  color: $white-color;
+}
+.mm-menu ul li.has-droupdown {
+  color: $white-color;
+  cursor: pointer;
+}
+.mm-menu ul li.has-droupdown > a:after {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-width: 2px 0 0 2px;
+  border-style: solid;
+  border-color: initial;
+  right: 2px;
+  top: 50%;
+  -webkit-transform: rotate(-45deg) translateY(-50%);
+  transform: rotate(-45deg) translateY(-50%);
+  -webkit-transform-origin: top;
+  transform-origin: top;
+  transition: all 0.3s ease-out;
+}
+.mm-menu ul li.has-droupdown ul.sub-menu {
+  padding-left: 0;
+  list-style: none;
+}
+.mm-menu ul li.has-droupdown ul.sub-menu li {
+  padding-left: 15px;
+}
+.mm-menu ul li.has-droupdown ul.sub-menu li:hover > a {
+  padding: 0 0 0 18px;
+  color: $white-color;
+}
+.mm-menu ul li.has-droupdown ul.sub-menu li:hover > a:before {
+  background: $white-color;
+  border-color: $white-color;
+}
+.mm-menu ul li.has-droupdown ul.sub-menu li a {
+  position: relative;
+  padding: 0 0 0 15px;
+  text-transform: capitalize;
+  font-size: 13px;
+  height: 0;
+  line-height: 46px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.mm-menu ul li.has-droupdown ul.sub-menu li a:before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 2px solid $white-color;
+  border-radius: 50%;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+}
+.mm-menu ul li.has-droupdown.active > a {
+  color: $white-color;
+}
+.mm-menu ul li.has-droupdown.active > a:after {
+  -webkit-transform: rotate(-135deg) translateY(-50%);
+  transform: rotate(-135deg) translateY(-50%);
+}
+.mm-menu ul li.has-droupdown.active ul.sub-menu.active li a {
+  height: 46px;
+  visibility: visible;
+  opacity: 1;
+}
+.mm-menu ul li.has-droupdown.active ul.sub-menu.active li a:before {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.mobile-search {
+  & form {
+    position: relative;
+    margin-bottom: 20px;
+    & input {
+      height: 45px;
+      line-height: 45px;
+      padding: 0px 10px;
+      border: none;
+      background: $white-color;
+      color: $body-color;
+      display: block;
+      box-shadow: none;
+      outline: none;
+      width: 100%;
+      padding-right: 50px;
+      font-size: 16px;
+    }
+    & button {
+      height: 45px;
+      line-height: 45px;
+      border: none;
+      color: $body-color;
+      box-shadow: none;
+      outline: none;
+      display: inline-block;
+      width: 45px;
+      font-size: 16px;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      @include transition(0.3s);
+      &:hover {
+        background: $theme-color;
+        color: $white-color;
+      }
+    }
+  }
+}

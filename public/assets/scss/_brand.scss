@@ -1,0 +1,18 @@
+/* 10. Brand Css */
+.brand-area {
+    box-shadow: 0px -1px 0px 0px rgba(233, 235, 237, 1);
+}
+.brand-area3 {
+	border-bottom: 1px solid $border-color;
+}
+.brand-wrapper {
+    text-align: center;
+    & img {
+        opacity: 0.3;
+        @include transition(0.3s);
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+
