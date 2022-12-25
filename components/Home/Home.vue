@@ -12,7 +12,7 @@ export default {
 
 <template>
   <main>
-    <mainSection />
+    <MainSection />
     <FreightTypes />
   </main>
 </template>
