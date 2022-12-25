@@ -10,8 +10,6 @@ import '..\\node_modules\\@fortawesome\\fontawesome-svg-core\\styles.css'
 
 import '..\\public\\assets\\css\\main.css'
 
-import '..\\public\\assets\\scss\\main.scss'
-
 import '..\\node_modules\\swiper\\css\\swiper.css'
 
 import _6f6c098b from '..\\layouts\\default.vue'

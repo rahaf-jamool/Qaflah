@@ -96,7 +96,7 @@
     flex-basis: 80%;
   }
   .down {
-    top: 10px;
+    display: none;
   }
 }
 @media (max-width: 768px) {

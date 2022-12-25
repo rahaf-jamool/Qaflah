@@ -56,11 +56,7 @@ export default {
   ],
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [
-    "~/public/assets/css/main.css",
-    "~/public/assets/scss/main.scss",
-    "swiper/css/swiper.css",
-  ],
+  css: ["~/public/assets/css/main.css", "swiper/css/swiper.css"],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,

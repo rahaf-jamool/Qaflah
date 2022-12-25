@@ -1,40 +1,5 @@
 [
   {
-    "name": "about",
-    "path": "/about",
-    "component": "D:\\\\Web Projects\\\\Vue Nuxt\\\\myresturant1\\\\pages\\\\about.vue",
-    "chunkName": "pages/about",
-    "_name": "_788bfff7"
-  },
-  {
-    "name": "contact",
-    "path": "/contact",
-    "component": "D:\\\\Web Projects\\\\Vue Nuxt\\\\myresturant1\\\\pages\\\\contact.vue",
-    "chunkName": "pages/contact",
-    "_name": "_efee9aec"
-  },
-  {
-    "name": "media-gallery",
-    "path": "/media/gallery",
-    "component": "D:\\\\Web Projects\\\\Vue Nuxt\\\\myresturant1\\\\pages\\\\media\\\\gallery\\\\index.vue",
-    "chunkName": "pages/media/gallery/index",
-    "_name": "_bee683e4"
-  },
-  {
-    "name": "media-news",
-    "path": "/media/news",
-    "component": "D:\\\\Web Projects\\\\Vue Nuxt\\\\myresturant1\\\\pages\\\\media\\\\news\\\\index.vue",
-    "chunkName": "pages/media/news/index",
-    "_name": "_9f807f7e"
-  },
-  {
-    "name": "media-videos",
-    "path": "/media/videos",
-    "component": "D:\\\\Web Projects\\\\Vue Nuxt\\\\myresturant1\\\\pages\\\\media\\\\videos\\\\index.vue",
-    "chunkName": "pages/media/videos/index",
-    "_name": "_1580601c"
-  },
-  {
     "name": "index",
     "path": "/",
     "component": "D:\\\\Web Projects\\\\Vue Nuxt\\\\myresturant1\\\\pages\\\\index.vue",
