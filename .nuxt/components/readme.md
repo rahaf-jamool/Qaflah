@@ -12,5 +12,5 @@ You can directly use them in pages and other components without the need to impo
 - `<CommonHeader>` | `<common-header>` (components/Common/Header.vue)
 - `<FreightTypes>` | `<freight-types>` (components/FreightTypes/FreightTypes.vue)
 - `<Home>` | `<home>` (components/Home/Home.vue)
-- `<MainSection>` | `<main-section>` (components/MainSection/MainSection.vue)
+- `<MainPage>` | `<main-page>` (components/MainPage/MainPage.vue)
 - `<SectionThree>` | `<section-three>` (components/SectionThree/SectionThree.vue)

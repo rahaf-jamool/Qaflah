@@ -1,10 +1,10 @@
 <script>
-import MainSection from "../MainSection/MainSection.vue";
+import MainPage from "../MainPage/MainPage.vue";
 import FreightTypes from "../FreightTypes/FreightTypes.vue";
 export default {
   name: "home",
   components: {
-    MainSection,
+    MainPage,
     FreightTypes,
   },
 };
@@ -12,7 +12,7 @@ export default {
 
 <template>
   <main>
-    <MainSection />
+    <MainPage />
     <FreightTypes />
   </main>
 </template>

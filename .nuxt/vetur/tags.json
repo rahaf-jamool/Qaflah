@@ -17,8 +17,8 @@
   "Home": {
     "description": "Auto imported from components/Home/Home.vue"
   },
-  "MainSection": {
-    "description": "Auto imported from components/MainSection/MainSection.vue"
+  "MainPage": {
+    "description": "Auto imported from components/MainPage/MainPage.vue"
   },
   "SectionThree": {
     "description": "Auto imported from components/SectionThree/SectionThree.vue"
