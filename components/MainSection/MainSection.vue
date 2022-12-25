@@ -40,6 +40,9 @@
           <img src="~assets/imgs/img_14.jpg" class="d-block w-100" alt="..." />
         </div>
       </div>
+      <a class="carousel-control-prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
       <button
         class="carousel-control-prev"
         type="button"
@@ -49,6 +52,9 @@
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
+      <a class="carousel-control-next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
       <button
         class="carousel-control-next"
         type="button"
@@ -67,24 +73,21 @@
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Non id
             earum corporis obcaecati optio repellat maiores dolorum, laboriosam
-            voluptatum debitis commodi excepturi, amet eos velit enim facilis
-            dolore dignissimos. Ipsam.
+            voluptatum debitis
           </p>
         </div>
         <div class="text">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Non id
             earum corporis obcaecati optio repellat maiores dolorum, laboriosam
-            voluptatum debitis commodi excepturi, amet eos velit enim facilis
-            dolore dignissimos. Ipsam.
+            voluptatum debitis
           </p>
         </div>
         <div class="text">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Non id
             earum corporis obcaecati optio repellat maiores dolorum, laboriosam
-            voluptatum debitis commodi excepturi, amet eos velit enim facilis
-            dolore dignissimos. Ipsam.
+            voluptatum debitis
           </p>
         </div>
       </div>
@@ -107,109 +110,10 @@
   </div>
 </template>
 <script>
+import "../../public/assets/css/SectionOne.css";
+
 export default {
   name: "SectionOne",
 };
 </script>
-<style scoped>
-.SectionOne {
-  position: relative;
-}
-
-.carousel button {
-  opacity: 0;
-}
-.myContainer {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  top: 100px;
-  left: 0;
-  right: 0;
-}
-.content {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.text {
-  position: relative;
-  background-color: rgba(255, 255, 255, 0.5);
-  display: flex;
-  justify-content: center;
-  margin: 10px;
-  flex-basis: 28%;
-  z-index: 1;
-}
-.text p {
-  font-size: 12px;
-  padding: 5px;
-  text-align: justify;
-  text-justify: inter-word;
-}
-
-.down {
-  position: relative;
-  top: 400px;
-  left: 100px;
-}
-
-.down .order p {
-  position: absolute;
-  font-size: 25px;
-  color: #3a322e;
-  padding: 2px 30px 2px 30px;
-  border-radius: 20px 20px 0px 20px;
-  font-family: Ubuntu;
-  border: 1px solid #3a322e;
-  transition: all 0.3s ease-in-out;
-  z-index: 999;
-}
-.down .order p:hover {
-  background-color: #3a322e;
-  color: #fff;
-}
-
-.down .title,
-.down .desc {
-  position: relative;
-  top: 60px;
-}
-.down .title p {
-  font-size: 75px;
-  color: #fff;
-  text-transform: uppercase;
-  text-shadow: 2px 2px #3a322e;
-  text-shadow: 2px 2px 4px #000000;
-  line-height: 75px;
-}
-.down .desc p {
-  color: #fff;
-  font-family: Ubuntu;
-  font-size: 30px;
-  text-align: justify;
-}
-@media (max-width: 1200px) {
-  .down {
-    top: 100px;
-  }
-}
-
-@media (max-width: 992px) {
-  .text {
-    flex-basis: 80%;
-  }
-  .down,
-  .down .title,
-  .down .desc {
-    display: none;
-  }
-}
-@media (max-width: 768px) {
-  .text:not(:first-child) {
-    display: none;
-  }
-}
-</style>
+<style scoped></style>

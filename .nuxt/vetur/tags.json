@@ -20,17 +20,20 @@
   "CommonHeader": {
     "description": "Auto imported from components/Common/Header.vue"
   },
+  "FreightTypes": {
+    "description": "Auto imported from components/FreightTypes/FreightTypes.vue"
+  },
   "Home": {
     "description": "Auto imported from components/Home/Home.vue"
   },
   "LoaderVPlaceload": {
     "description": "Auto imported from components/Loader/VPlaceload.vue"
   },
-  "SectionOne": {
-    "description": "Auto imported from components/SectionOne/SectionOne.vue"
+  "MainSection": {
+    "description": "Auto imported from components/MainSection/MainSection.vue"
   },
-  "SectionTwo": {
-    "description": "Auto imported from components/SectionTwo/SectionTwo.vue"
+  "SectionThree": {
+    "description": "Auto imported from components/SectionThree/SectionThree.vue"
   },
   "MediaGallery": {
     "description": "Auto imported from components/Media/Gallery/Gallery.vue"
