@@ -1,6 +1,6 @@
 <template>
   <div class="sectionTwo">
-    <div class="myContainer">
+    <div class="freightContainer">
       <div class="text">
         <p>
           Lorem ipsum dolor sit ametperiam dolore consectetur adipisicing elit
@@ -29,8 +29,7 @@
   </div>
 </template>
 <script>
-import "../../public/assets/css/SectionTwo.css";
-
+import "../../public/assets/css/FreightTypes.css";
 export default {
   name: "SectionTwo",
 };

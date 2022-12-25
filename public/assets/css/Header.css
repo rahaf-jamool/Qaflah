@@ -200,7 +200,7 @@
   width: 20%;
   margin: 0;
   padding: 0;
-  z-index: 999;
+  z-index: 1;
   background-color: rgba(0, 0, 0, 0.5);
   transition: all 0.5s ease-in-out;
   position: absolute;
@@ -286,7 +286,8 @@
     overflow: hidden;
   }
   .nav-bar.active {
-    height: 525px;
+    height: 40em;
+    top: 60px;
   }
   .navbar .nav-bar ul {
     display: block;
@@ -299,6 +300,7 @@
   }
   .navbar .nav-bar.active ul {
     opacity: 1;
+    padding: 0;
   }
 
   .navbar .nav-bar ul li {
@@ -311,24 +313,58 @@
   .navbar .nav-bar ul li a {
     color: #fff;
   }
+  .navbar .rightSide .shopping-cart img {
+    margin-right: 0px;
+    margin-left: 5px;
+  }
   /* End navbar */
+
   /* Start companies */
   .companies .items a {
-    font-size: 12px;
-    white-space: pre-wrap;
+    font-size: 10px;
   }
   /* End companies */
 }
 /* Small Screens */
 @media (max-width: 768px) {
   /* Start Navbar */
+  .navbar .leftSide .logo {
+    margin-left: 10px;
+  }
+  .navbar .leftSide .logo img {
+    width: 100px;
+    height: 80px;
+  }
+  .nav-bar.active {
+    height: 16em;
+    top: 55px;
+  }
   .navbar ul {
     display: none;
+  }
+  .navbar .nav-bar ul {
+    margin: 40px auto 0 auto;
+  }
+  .navbar .nav-bar ul li {
+    margin-top: 20px;
+  }
+
+  .navbar .rightSide > * {
+    margin-right: 0px;
+  }
+  .navbar .rightSide .search-field::placeholder {
+    color: transparent;
   }
   /* End Navbar */
   /* Start companies */
   .companies .items a {
-    font-size: 8px;
+    font-size: 6.5px;
+    margin-right: 2%;
+  }
+
+  .companies .dropdown li a {
+    font-size: 6.5px;
+    padding: 20px 20px;
   }
   /* End companies */
 }

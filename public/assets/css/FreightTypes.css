@@ -9,23 +9,22 @@
   background-size: cover;
 }
 
-.myContainer {
+.freightContainer {
   display: flex;
   flex-direction: column;
 }
 
-.text {
+.freightContainer .text {
   display: flex;
   justify-content: center;
 }
 
-.text p {
+.freightContainer .text p {
   width: 70%;
-  margin: 0;
-  padding: 0;
+  padding: 10px;
   font-size: 20px;
-  text-align: center;
-  margin: 0px 0px 30px 0px;
+  text-align: justify;
+  margin: 90px 0px 30px 0px;
 }
 
 .freight {
@@ -46,7 +45,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  flex-basis: 12%;
+  flex-basis: 18%;
 }
 
 .freight .air {
@@ -69,4 +68,37 @@
   font-size: 50px;
   margin: 0;
   z-index: 999;
+}
+@media (max-width: 1200px) {
+}
+@media (max-width: 992px) {
+  .freightContainer .text p {
+    width: 80%;
+    font-size: 13px;
+    margin: 40px 0px 30px 0px;
+  }
+  .freight .sea,
+  .freight .land,
+  .freight .air {
+    flex-basis: 20%;
+  }
+  .freight .air {
+    margin-bottom: 120px;
+  }
+}
+@media (max-width: 768px) {
+  .freightContainer .text p {
+    margin: 60px 0px 30px 0px;
+    font-size: 15px;
+  }
+  .freight .sea,
+  .freight .land,
+  .freight .air {
+    flex-basis: 10%;
+    margin: 0 0 0 10px;
+  }
+  .freight .number {
+    padding: 5px;
+    font-size: 40px;
+  }
 }
