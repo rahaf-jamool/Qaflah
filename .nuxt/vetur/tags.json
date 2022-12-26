@@ -5,11 +5,17 @@
   "Tutorial": {
     "description": "Auto imported from components/Tutorial.vue"
   },
+  "BriefPage": {
+    "description": "Auto imported from components/BriefPage/BriefPage.vue"
+  },
   "CommonFooter": {
     "description": "Auto imported from components/Common/Footer.vue"
   },
   "CommonHeader": {
     "description": "Auto imported from components/Common/Header.vue"
+  },
+  "CompaniesServices": {
+    "description": "Auto imported from components/CompaniesServices/CompaniesServices.vue"
   },
   "FreightTypes": {
     "description": "Auto imported from components/FreightTypes/FreightTypes.vue"
@@ -19,8 +25,5 @@
   },
   "MainPage": {
     "description": "Auto imported from components/MainPage/MainPage.vue"
-  },
-  "SectionThree": {
-    "description": "Auto imported from components/SectionThree/SectionThree.vue"
   }
 }

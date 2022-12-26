@@ -1,0 +1,66 @@
+.companiesservices {
+  height: 1500px;
+  background-image: url("../../../assets/imgs/img_02_03.png");
+  background-position: center;
+  background-size: cover;
+}
+.tabs {
+  display: flex;
+  flex-direction: column;
+}
+.tabs .tabHead {
+  margin-top: 150px;
+  display: flex;
+  height: 44px;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.tabs .tabHead .title {
+  font-size: 30px;
+  margin-left: 50px;
+}
+
+.tabs .tabHead .tabs-choose {
+  margin-right: 50px;
+}
+.tabs .tabHead .tabs-choose li {
+  margin-right: -4px;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 10px 10px 0px 0px;
+  background-color: rgba(237, 182, 115, 0.26);
+  cursor: pointer;
+}
+.tabs .tabHead .tabs-choose li .headInfo,
+.tabs .tabHead .tabs-choose li .headInfo2 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.tabs .tabHead .tabs-choose li .headInfo p,
+.tabs .tabHead .tabs-choose li .headInfo2 p {
+  margin: 0;
+}
+.tabs .tabHead .tabs-choose li .headInfo img {
+  width: 40px;
+  height: 20px;
+  margin-right: 10px;
+}
+.tabs .tabHead .tabs-choose li .headInfo2 img {
+  width: 25px;
+  height: 25px;
+  margin-right: 2px;
+}
+
+.tabs .tabs-choose li.active {
+  background-color: rgba(237, 182, 115, 0.46);
+}
+
+.tabs .tabs-content {
+  width: 100%;
+  background-color: rgba(237, 182, 115, 0.46);
+  margin: 0 auto;
+  padding: 20px;
+}

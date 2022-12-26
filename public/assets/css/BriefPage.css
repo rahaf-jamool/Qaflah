@@ -1,0 +1,57 @@
+@import url("./main.css");
+.briefpage {
+  width: 100%;
+  overflow: hidden;
+}
+.briefContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+.briefContainer .image img {
+  width: 600px;
+  height: auto;
+}
+.briefContainer .detailsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.detailsContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.detailsContainer .details {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: flex-end;
+  flex-wrap: nowrap;
+  margin: 20px 130px 0px 0px;
+}
+.detailsContainer .details .img img {
+  width: 100px;
+  height: 75px;
+  margin-right: 45px;
+}
+.detailsContainer .details .title p {
+  font-family: UbuntuBold;
+  white-space: nowrap;
+  text-align: left;
+  margin: 0px 0px 10px 0px;
+}
+
+.detailsContainer .details .desc p {
+  width: 500px;
+  text-align: left;
+  margin: 0;
+}
+
+.detailsContainer .details > * {
+  text-align: center;
+}

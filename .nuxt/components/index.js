@@ -1,11 +1,12 @@
 export { default as NuxtLogo } from '../..\\components\\NuxtLogo.vue'
 export { default as Tutorial } from '../..\\components\\Tutorial.vue'
+export { default as BriefPage } from '../..\\components\\BriefPage\\BriefPage.vue'
 export { default as CommonFooter } from '../..\\components\\Common\\Footer.vue'
 export { default as CommonHeader } from '../..\\components\\Common\\Header.vue'
+export { default as CompaniesServices } from '../..\\components\\CompaniesServices\\CompaniesServices.vue'
 export { default as FreightTypes } from '../..\\components\\FreightTypes\\FreightTypes.vue'
 export { default as Home } from '../..\\components\\Home\\Home.vue'
 export { default as MainPage } from '../..\\components\\MainPage\\MainPage.vue'
-export { default as SectionThree } from '../..\\components\\SectionThree\\SectionThree.vue'
 
 // nuxt/nuxt.js#8607
 function wrapFunctional(options) {

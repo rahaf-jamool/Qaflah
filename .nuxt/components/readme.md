@@ -8,9 +8,10 @@ You can directly use them in pages and other components without the need to impo
 
 - `<NuxtLogo>` | `<nuxt-logo>` (components/NuxtLogo.vue)
 - `<Tutorial>` | `<tutorial>` (components/Tutorial.vue)
+- `<BriefPage>` | `<brief-page>` (components/BriefPage/BriefPage.vue)
 - `<CommonFooter>` | `<common-footer>` (components/Common/Footer.vue)
 - `<CommonHeader>` | `<common-header>` (components/Common/Header.vue)
+- `<CompaniesServices>` | `<companies-services>` (components/CompaniesServices/CompaniesServices.vue)
 - `<FreightTypes>` | `<freight-types>` (components/FreightTypes/FreightTypes.vue)
 - `<Home>` | `<home>` (components/Home/Home.vue)
 - `<MainPage>` | `<main-page>` (components/MainPage/MainPage.vue)
-- `<SectionThree>` | `<section-three>` (components/SectionThree/SectionThree.vue)
