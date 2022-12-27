@@ -75,31 +75,49 @@
         <div class="content-three" v-if="activeTab === '3'">
           <div class="tab">
             <div class="left">
-              <p>Air Fright</p>
-              <p>Companies</p>
+              <p class="title">Air Fright <br /><span>Companies</span></p>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero
+                officia, a, velit suscipit nam iusto possimus tempora dicta
+                facere voluptate voluptatibus error? Culpa, quasi consectetur
+                corrupti harum dolorum beatae molestias!
+              </p>
             </div>
-            <carousel class="items-arrivals">
+            <carousel
+              class="items-arrivals"
+              :responsive="responsive"
+              :autoplay="true"
+            >
               <div class="item" v-for="item in ResentArrivals" :key="item.id">
-                <div class="image">
+                <div class="item-image">
                   <figure>
-                    <a href="#"
-                      ><img
-                        :src="
-                          require('../../public/assets/images/imgs/' +
-                            item.image)
-                        "
-                        alt="photo" /><img
-                        :src="
-                          require('../../public/assets/images/imgs/' +
-                            item.image)
-                        "
-                        alt="photo"
-                    /></a>
+                    <a href="#">
+                      <div class="item-container">
+                        <p class="item-desc">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit Tempora obcaecati
+                        </p>
+                        <img
+                          :src="
+                            require('../../public/assets/images/imgs/' +
+                              item.image)
+                          "
+                          alt="photo"
+                        />
+                        <img
+                          class="frame"
+                          src="../../public/assets/images/imgs/10.png"
+                          alt="photo"
+                        />
+                        <img
+                          class="logo"
+                          src="../../public/assets/images/imgs/img_05.png"
+                          alt="photo"
+                        />
+                      </div>
+                    </a>
                   </figure>
                 </div>
-                <!--    <div class="title">
-                  <h3>{{ item.title }}</h3>
-                </div>-->
               </div>
             </carousel>
           </div>
@@ -152,12 +170,22 @@ export default {
           image: "img_04.png",
           title: "WE FIGHT FOR RIGHT",
         },
+        {
+          id: "7",
+          image: "img_04.png",
+          title: "WE FIGHT FOR RIGHT",
+        },
+        {
+          id: "8",
+          image: "img_04.png",
+          title: "WE FIGHT FOR RIGHT",
+        },
       ],
       responsive: {
         0: { items: 1, nav: true },
-        600: { items: 2, nav: true },
-        1000: { items: 2, nav: true },
-        1200: { items: 2, nav: true },
+        600: { items: 1, nav: true },
+        1000: { items: 1, nav: true },
+        1200: { items: 1, nav: true },
       },
     };
   },

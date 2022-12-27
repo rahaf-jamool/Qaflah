@@ -64,7 +64,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .images-wrapper {
   margin: 30px 0;
 }

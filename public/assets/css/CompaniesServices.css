@@ -63,6 +63,8 @@
   background-color: rgba(237, 182, 115, 0.46);
   margin: 0 auto;
   padding: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 .tabs .tabs-content .tab {
   display: flex;
@@ -72,23 +74,45 @@
   display: flex;
   flex-direction: column;
 }
+.tabs .tabs-content .tab .left .title {
+  font-family: UbuntuBold;
+  font-size: 40px;
+  line-height: 35px;
+}
+.tabs .tabs-content .tab .left .title span {
+  font-family: Ubuntu;
+  font-size: 30px;
+}
 .tabs .tabs-content .tab .item img {
   width: 250px;
 }
-.resent-arrivals {
-  padding-top: 10%;
+.items-arrivals .item .item-image .item-container {
+  position: relative;
 }
-.resent-arrivals .text-arrival {
-  padding: 20px 0;
-  text-align: center;
-  color: #1c2b7f;
+.items-arrivals .item .item-image .item-container .item-desc,
+.items-arrivals .item .item-image .item-container .frame {
+  position: absolute;
+  top: 0;
 }
-.resent-arrivals .text-arrival img {
-  width: 50px;
+.items-arrivals .item .item-image .item-container .item-desc {
+  font-size: 12px;
+  color: #3a322e;
+  font-family: Ubuntu;
+  text-align: left;
+  padding: 10px;
+  z-index: 2;
 }
+.items-arrivals .item .item-image .item-container .logo {
+  width: 100px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 10px;
+}
+
 .items-arrivals {
   padding: 20px 30px;
-  width: 610px;
+  width: 880px;
 }
 .items-arrivals .item {
   text-align: center;
@@ -101,6 +125,9 @@
   /* background: url("~/public/assets/images/icon/Asset 15ldpi.png"); */
   background-size: cover;
 }
+.items-arrivals .item .item-image {
+  border-bottom: 0;
+}
 .items-arrivals .item .title {
   padding: 30px 0;
   background: #fef5f5;
@@ -109,27 +136,38 @@
 .items-arrivals .item:hover .title {
   background: #f2b914;
 }
-.items-arrivals .item .image {
+.items-arrivals .item .item-image {
   width: 100%;
   height: 100%;
   transition: 0.8s ease-out;
 }
-.items-arrivals .item:hover .image {
+.items-arrivals .item:hover .item-image {
   opacity: 0.3;
 }
-.items-arrivals .item .image figure {
+.items-arrivals .item .item-image figure {
   position: relative;
   margin: unset;
-  /* height: 400px; */
   background-size: cover;
 }
 
 .owl-theme .owl-nav {
   margin-top: 10px;
   text-align: left !important;
+  margin-left: -115px;
+  font-size: 46px;
   /* -webkit-tap-highlight-color: transparent; */
 }
 
 .owl-theme .owl-dots {
   text-align: left !important;
+}
+
+.owl-carousel {
+  width: auto;
+}
+.owl-carousel.owl-drag .owl-item {
+  width: auto !important;
+}
+.owl-theme .owl-dots {
+  /* display: none; */
 }
