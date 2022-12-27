@@ -153,11 +153,23 @@
 .owl-theme .owl-nav {
   margin-top: 10px;
   text-align: left !important;
-  margin-left: -115px;
-  font-size: 46px;
-  /* -webkit-tap-highlight-color: transparent; */
+  position: relative;
+  left: -250px;
+}
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next {
+  font-size: 35px !important;
+  width: 70px !important;
+  height: 70px !important;
+  border: 2px solid #3a322e !important;
+  border-radius: 70px;
 }
 
+.owl-carousel .owl-nav button.owl-prev:hover,
+.owl-carousel .owl-nav button.owl-next:hover {
+  background-color: #3a322e !important;
+  color: #fff !important;
+}
 .owl-theme .owl-dots {
   text-align: left !important;
 }

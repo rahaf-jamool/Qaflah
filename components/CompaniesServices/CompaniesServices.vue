@@ -87,6 +87,7 @@
               class="items-arrivals"
               :responsive="responsive"
               :autoplay="true"
+              :autoWidth="true"
             >
               <div class="item" v-for="item in ResentArrivals" :key="item.id">
                 <div class="item-image">
@@ -118,6 +119,7 @@
                     </a>
                   </figure>
                 </div>
+                <div>{{ item.id }}/{{ ResentArrivals.length }}</div>
               </div>
             </carousel>
           </div>
@@ -188,6 +190,11 @@ export default {
         1200: { items: 1, nav: true },
       },
     };
+  },
+  methods: {
+    write: function () {
+      console.log("key up");
+    },
   },
 };
 </script>
