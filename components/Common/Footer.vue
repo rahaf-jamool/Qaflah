@@ -1,28 +1,49 @@
 <template>
-  <div>footer</div>
+  <div class="footer">
+    <div class="details">
+      <div class="left">
+        <img src="../../assets/imgs/img_11.png" />
+        <p>
+          +971 888 777 666<br />
+          +971 888 777 555<br />
+          info@Qaflah-Logistics.com<br />
+          UAE,Dubai,123st.
+        </p>
+        <ul class="social">
+          <li><i class="fa-brands fa-square-facebook">hi</i></li>
+          <li>fb</li>
+          <li>fb</li>
+          <li>fb</li>
+          <li>fb</li>
+          <li>fb</li>
+          <li>fb</li>
+        </ul>
+      </div>
+      <div class="right">
+        <p>Home</p>
+        <p>About Us</p>
+        <p>Orders</p>
+        <p>Media Center</p>
+        <p>Companies</p>
+        <p>Services</p>
+        <p>Partners</p>
+      </div>
+      <div class="right">
+        <p>Home</p>
+        <p>About Us</p>
+        <p>Orders</p>
+        <p>Media Center</p>
+        <p>Companies</p>
+        <p>Services</p>
+        <p>Partners</p>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>
-import { mapGetters } from "vuex";
-
+import "../../public/assets/css/Footer.css";
 export default {
   name: "Footer",
-  data: (vm) => ({
-    selectedItem: "en",
-  }),
-  computed: {
-    ...mapGetters ({
-      locales: 'locales',
-      locale : 'locale',
-    })
-  },
-  methods: {
-    changeLange() {
-      let lang = this.selectedItem;
-      console.log(lang);
-      this.$store.commit("SET_LANG",{lang});
-      this.$i18n.locale = lang;
-    },
-  },
 };
 </script>

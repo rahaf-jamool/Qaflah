@@ -72,7 +72,25 @@
       <div class="tabs-content">
         <div class="content-one" v-if="activeTab === '1'">Content One</div>
         <div class="content-two" v-if="activeTab === '2'">Content Two</div>
-        <div class="content-three" v-if="activeTab === '3'"></div>
+        <div class="content-three" v-if="activeTab === '3'">
+          <div class="tab">
+            <div class="left">
+              <p>Air Fright</p>
+              <p>Companies</p>
+            </div>
+            <carousel class="owl-menu">
+              <div class="item">
+                <img src="https://via.placeholder.com/150" />
+              </div>
+              <div class="item">
+                <img src="https://via.placeholder.com/150" />
+              </div>
+              <div class="item">
+                <img src="https://via.placeholder.com/150" />
+              </div>
+            </carousel>
+          </div>
+        </div>
         <div class="content-four" v-if="activeTab === '4'">Content Four</div>
         <div class="content-four" v-if="activeTab === '5'">Content Five</div>
         <div class="content-four" v-if="activeTab === '6'">Content Six</div>
@@ -88,7 +106,7 @@ import "../../public/assets/css/CompaniesServices.css";
 export default {
   name: "companiesservices",
   data() {
-    return { activeTab: "1" };
+    return { activeTab: "3" };
   },
 };
 </script>

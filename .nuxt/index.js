@@ -15,7 +15,6 @@ import { createStore } from './store.js'
 
 import nuxt_plugin_plugin_aa2ae2f6 from 'nuxt_plugin_plugin_aa2ae2f6' // Source: .\\components\\plugin.js (mode: 'all')
 import nuxt_plugin_cookieuniversalnuxt_314831d0 from 'nuxt_plugin_cookieuniversalnuxt_314831d0' // Source: .\\cookie-universal-nuxt.js (mode: 'all')
-import nuxt_plugin_fontawesome_5905776a from 'nuxt_plugin_fontawesome_5905776a' // Source: .\\fontawesome.js (mode: 'all')
 import nuxt_plugin_vueawesomeswiper_0f4ed586 from 'nuxt_plugin_vueawesomeswiper_0f4ed586' // Source: ..\\plugins\\vue-awesome-swiper (mode: 'client')
 import nuxt_plugin_vvideoembed_3222b47a from 'nuxt_plugin_vvideoembed_3222b47a' // Source: ..\\plugins\\v-video-embed (mode: 'client')
 import nuxt_plugin_words_33028e1a from 'nuxt_plugin_words_33028e1a' // Source: ..\\plugins\\words (mode: 'client')
@@ -223,10 +222,6 @@ async function createApp(ssrContext, config = {}) {
 
   if (typeof nuxt_plugin_cookieuniversalnuxt_314831d0 === 'function') {
     await nuxt_plugin_cookieuniversalnuxt_314831d0(app.context, inject)
-  }
-
-  if (typeof nuxt_plugin_fontawesome_5905776a === 'function') {
-    await nuxt_plugin_fontawesome_5905776a(app.context, inject)
   }
 
   if (process.client && typeof nuxt_plugin_vueawesomeswiper_0f4ed586 === 'function') {

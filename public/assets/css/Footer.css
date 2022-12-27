@@ -1,0 +1,45 @@
+.footer {
+  height: 600px;
+  background-image: url("../../../assets/imgs/img_12.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.footer .details {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footer .details .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .details .left img {
+  width: 400px;
+}
+.footer .details .left p,
+.footer .details .right p {
+  color: #fff;
+  text-align: left;
+}
+.footer .details .left p {
+  line-height: 40px;
+  margin-right: 40px;
+}
+
+.footer .details .left ul {
+  display: flex;
+}
+.footer .details .left ul li {
+  list-style: none;
+  color: #fff;
+}
+.footer .details .right {
+  margin-bottom: 150px;
+}
+.footer .details .right p {
+  margin: 0;
+}

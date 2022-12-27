@@ -63,19 +63,19 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
 
-  //fontawesome start
-  buildModules: ["@nuxtjs/fontawesome"],
-  fontawesome: {
-    // component: 'fa',
-    icons: {
-      // solid: ['faSearch','faAnalytics'],
-      // brands: ['faTwitter','faFacebook','faPinterestP','faInstagram']
-      solid: true,
-      regular: true,
-      brands: true,
-    },
-  },
-  //fontawesome end
+  // //fontawesome start
+  // buildModules: ["@nuxtjs/fontawesome"],
+  // fontawesome: {
+  //   // component: 'fa',
+  //   icons: {
+  //     // solid: ['faSearch','faAnalytics'],
+  //     // brands: ['faTwitter','faFacebook','faPinterestP','faInstagram']
+  //     solid: true,
+  //     regular: true,
+  //     brands: true,
+  //   },
+  // },
+  // //fontawesome end
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // Simple usage

@@ -64,3 +64,14 @@
   margin: 0 auto;
   padding: 20px;
 }
+.tabs .tabs-content .tab {
+  display: flex;
+  flex-direction: row;
+}
+.tabs .tabs-content .tab .left {
+  display: flex;
+  flex-direction: column;
+}
+.tabs .tabs-content .tab .item img {
+  width: 50px;
+}
