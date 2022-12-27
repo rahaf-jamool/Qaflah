@@ -78,15 +78,23 @@
               <p>Air Fright</p>
               <p>Companies</p>
             </div>
-            <carousel class="owl-menu">
-              <div class="item">
-                <img src="https://via.placeholder.com/150" />
-              </div>
-              <div class="item">
-                <img src="https://via.placeholder.com/150" />
-              </div>
-              <div class="item">
-                <img src="https://via.placeholder.com/150" />
+            <carousel class="items-arrivals">
+              <div class="item" v-for="item in ResentArrivals" :key="item.id">
+                <div class="image">
+                  <figure>
+                    <a href="#"
+                      ><img
+                        :src="
+                          require('../../public/assets/images/' + item.image)
+                        "
+                        alt="photo"
+                        style="width 150px"
+                    /></a>
+                  </figure>
+                </div>
+                <div class="title">
+                  <h3>{{ item.title }}</h3>
+                </div>
               </div>
             </carousel>
           </div>
@@ -106,7 +114,47 @@ import "../../public/assets/css/CompaniesServices.css";
 export default {
   name: "companiesservices",
   data() {
-    return { activeTab: "3" };
+    return {
+      activeTab: "3",
+      ResentArrivals: [
+        {
+          id: "1",
+          image: "Untitled-3-01.jpg",
+          title: "WE FIGHT FOR RIGHT",
+        },
+        {
+          id: "2",
+          image: "Untitled-3-02.jpg",
+          title: "WE FIGHT FOR RIGHT",
+        },
+        {
+          id: "3",
+          image: "Untitled-3-03.jpg",
+          title: "WE FIGHT FOR RIGHT",
+        },
+        {
+          id: "4",
+          image: "Untitled-3-07.jpg",
+          title: "WE FIGHT FOR RIGHT",
+        },
+        {
+          id: "5",
+          image: "Untitled-3-05.jpg",
+          title: "WE FIGHT FOR RIGHT",
+        },
+        {
+          id: "6",
+          image: "Untitled-3-06.jpg",
+          title: "WE FIGHT FOR RIGHT",
+        },
+      ],
+      responsive: {
+        0: { items: 1, nav: true },
+        600: { items: 2, nav: true },
+        1000: { items: 2, nav: true },
+        1200: { items: 3, nav: true },
+      },
+    };
   },
 };
 </script>
