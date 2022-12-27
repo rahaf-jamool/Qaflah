@@ -1,4 +1,10 @@
 {
+  "PageTitle": {
+    "description": "Auto imported from components/global/PageTitle.vue"
+  },
+  "TitleHead": {
+    "description": "Auto imported from components/global/TitleHead.vue"
+  },
   "NuxtLogo": {
     "description": "Auto imported from components/NuxtLogo.vue"
   },
@@ -25,5 +31,20 @@
   },
   "MainPage": {
     "description": "Auto imported from components/MainPage/MainPage.vue"
+  },
+  "MediaGallery": {
+    "description": "Auto imported from components/Media/Gallery/Gallery.vue"
+  },
+  "MediaNewsItem": {
+    "description": "Auto imported from components/Media/News/NewsItem.vue"
+  },
+  "MediaNewsPagination": {
+    "description": "Auto imported from components/Media/News/Pagination.vue"
+  },
+  "MediaNewsSidebar": {
+    "description": "Auto imported from components/Media/News/sidebar.vue"
+  },
+  "MediaVideo": {
+    "description": "Auto imported from components/Media/Video/Video.vue"
   }
 }

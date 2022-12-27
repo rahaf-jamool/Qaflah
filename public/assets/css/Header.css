@@ -57,7 +57,7 @@
   color: #000;
   font-size: 17px;
   white-space: nowrap;
-  padding: 15px;
+  padding: 0px 0px 0px 25px;
   transition: all 0.5s ease-out;
   font-family: Ubuntu;
 }
@@ -66,6 +66,33 @@
   transform: scale(1.5);
 }
 
+.navbar .nav-bar .about .dropdown,
+.navbar .nav-bar .media .dropdown {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: all 0.5s ease-in-out;
+  border-radius: 10px;
+  position: absolute;
+  top: 30px;
+  left: -40px;
+  transform: scaleX(0);
+}
+.navbar .nav-bar .dropdown li a:hover {
+  transform: scale(1.1);
+}
+.navbar .nav-bar .media .dropdown {
+  left: 25px;
+}
+.navbar .nav-bar .dropdown li,
+.navbar .nav-bar .dropdown li a {
+  z-index: 99999;
+}
 .navbar .rightSide {
   display: flex;
   flex-direction: row;
@@ -157,6 +184,8 @@
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
+  position: relative;
+  z-index: -1;
 }
 .companies .items {
   display: flex;
@@ -197,7 +226,7 @@
 
 .companies .dropdown {
   list-style: none;
-  width: 20%;
+  width: auto;
   margin: 0;
   padding: 0;
   z-index: 1;
@@ -208,7 +237,7 @@
   top: 40px;
   transform: scaleX(0);
 }
-
+.navbar .nav-bar .dropdown li,
 .companies .dropdown li {
   width: 100%;
   margin: 0;
@@ -221,12 +250,15 @@
   border-radius: 0 0 10px 10px;
 }
 
-.companies .dropdown li:hover {
+.companies .dropdown li:hover,
+.navbar .nav-bar .dropdown li:hover {
   background-color: rgba(255, 255, 255, 0.5);
 }
+.navbar .nav-bar .dropdown li a:hover,
 .companies .dropdown li a:hover {
   color: #000;
 }
+.navbar .nav-bar .dropdown li a,
 .companies .dropdown li a {
   display: block;
   padding: 20px 25px;
@@ -237,7 +269,10 @@
   font-size: 12px;
 }
 
+.navbar .nav-bar .media:hover .dropdown,
+.navbar .nav-bar .about:hover .dropdown,
 .companies .items .freight:hover .dropdown,
+.navbar .nav-bar .dropdown li:hover,
 .companies .dropdown li:hover {
   transform: scaleX(1);
 }

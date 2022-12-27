@@ -3,6 +3,7 @@ import MainPage from "../MainPage/MainPage.vue";
 import FreightTypes from "../FreightTypes/FreightTypes.vue";
 import BriefPage from "../BriefPage/BriefPage.vue";
 import CompaniesServices from "../CompaniesServices/CompaniesServices.vue";
+import Gallery from "../Media/Gallery/Gallery.vue";
 export default {
   name: "home",
   components: {
@@ -10,6 +11,7 @@ export default {
     FreightTypes,
     BriefPage,
     CompaniesServices,
+    Gallery,
   },
 };
 </script>
@@ -20,6 +22,7 @@ export default {
     <FreightTypes />
     <BriefPage />
     <CompaniesServices />
+    <Gallery />
   </main>
 </template>
 

@@ -10,10 +10,28 @@
 
         <nav class="nav-bar">
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Orders</a></li>
-            <li><a href="#">Media Center</a></li>
+            <li><NuxtLink to="#">Home</NuxtLink></li>
+            <li>
+              <NuxtLink to="#" class="about"
+                >About
+                <ul class="dropdown">
+                  <li><NuxtLink to="#">Company Profile</NuxtLink></li>
+                  <li><NuxtLink to="#">Vision And Mission</NuxtLink></li>
+                  <li><NuxtLink to="#">General Manager's Speech</NuxtLink></li>
+                </ul>
+              </NuxtLink>
+            </li>
+            <li><NuxtLink to="#">Orders</NuxtLink></li>
+            <li>
+              <NuxtLink to="#" class="media"
+                >Media Center
+                <ul class="dropdown">
+                  <li><NuxtLink to="#">News</NuxtLink></li>
+                  <li><NuxtLink to="/Gallery">Vedios</NuxtLink></li>
+                  <li><NuxtLink to="/gallery">Gallery</NuxtLink></li>
+                </ul></NuxtLink
+              >
+            </li>
           </ul>
         </nav>
         <div class="navbutton" @click="toggleClass">
@@ -60,6 +78,9 @@
 </template>
 
 <script>
+import "../Media/Gallery/Gallery.vue";
+import "../Media/News/NewsItem.vue";
+import "../Media/Video/Video.vue";
 import "../../public/assets/css/Header.css";
 export default {
   name: "Header",
