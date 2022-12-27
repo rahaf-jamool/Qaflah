@@ -88,13 +88,12 @@
                           require('../../public/assets/images/' + item.image)
                         "
                         alt="photo"
-                        style="width 150px"
                     /></a>
                   </figure>
                 </div>
-                <div class="title">
+                <!--    <div class="title">
                   <h3>{{ item.title }}</h3>
-                </div>
+                </div>-->
               </div>
             </carousel>
           </div>

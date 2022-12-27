@@ -119,10 +119,16 @@
 .items-arrivals .item .image figure {
   position: relative;
   margin: unset;
-  height: 400px;
+  /* height: 400px; */
   background-size: cover;
 }
 
+.owl-theme .owl-nav {
+  margin-top: 10px;
+  text-align: left !important;
+  /* -webkit-tap-highlight-color: transparent; */
+}
+
 .owl-theme .owl-dots {
-  /* text-align: center; */
+  text-align: left !important;
 }
