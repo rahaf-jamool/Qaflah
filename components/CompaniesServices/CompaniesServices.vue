@@ -88,6 +88,11 @@
                           require('../../public/assets/images/imgs/' +
                             item.image)
                         "
+                        alt="photo" /><img
+                        :src="
+                          require('../../public/assets/images/imgs/' +
+                            item.image)
+                        "
                         alt="photo"
                     /></a>
                   </figure>
