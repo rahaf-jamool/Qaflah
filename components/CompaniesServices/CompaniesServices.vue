@@ -85,7 +85,8 @@
                     <a href="#"
                       ><img
                         :src="
-                          require('../../public/assets/images/' + item.image)
+                          require('../../public/assets/images/imgs/' +
+                            item.image)
                         "
                         alt="photo"
                     /></a>
@@ -118,32 +119,32 @@ export default {
       ResentArrivals: [
         {
           id: "1",
-          image: "Untitled-3-01.jpg",
+          image: "img_04.png",
           title: "WE FIGHT FOR RIGHT",
         },
         {
           id: "2",
-          image: "Untitled-3-02.jpg",
+          image: "img_07.png",
           title: "WE FIGHT FOR RIGHT",
         },
         {
           id: "3",
-          image: "Untitled-3-03.jpg",
+          image: "img_04.png",
           title: "WE FIGHT FOR RIGHT",
         },
         {
           id: "4",
-          image: "Untitled-3-07.jpg",
+          image: "img_04.png",
           title: "WE FIGHT FOR RIGHT",
         },
         {
           id: "5",
-          image: "Untitled-3-05.jpg",
+          image: "img_04.png",
           title: "WE FIGHT FOR RIGHT",
         },
         {
           id: "6",
-          image: "Untitled-3-06.jpg",
+          image: "img_04.png",
           title: "WE FIGHT FOR RIGHT",
         },
       ],
@@ -151,7 +152,7 @@ export default {
         0: { items: 1, nav: true },
         600: { items: 2, nav: true },
         1000: { items: 2, nav: true },
-        1200: { items: 3, nav: true },
+        1200: { items: 2, nav: true },
       },
     };
   },
