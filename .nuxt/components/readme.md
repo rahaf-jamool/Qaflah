@@ -21,6 +21,7 @@ You can directly use them in pages and other components without the need to impo
 - `<MainPage>` | `<main-page>` (components/MainPage/MainPage.vue)
 - `<MediaCenter>` | `<media-center>` (components/MediaCenter/MediaCenter.vue)
 - `<SpecialOffers>` | `<special-offers>` (components/SpecialOffers/SpecialOffers.vue)
+- `<TermsService>` | `<terms-service>` (components/Terms-Service/TermsService.vue)
 - `<MediaGallery>` | `<media-gallery>` (components/Media/Gallery/Gallery.vue)
 - `<MediaNewsItem>` | `<media-news-item>` (components/Media/News/NewsItem.vue)
 - `<MediaNewsPagination>` | `<media-news-pagination>` (components/Media/News/Pagination.vue)

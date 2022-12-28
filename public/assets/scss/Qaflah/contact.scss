@@ -1,0 +1,33 @@
+h2 {
+  font-weight: 600;
+  color: #373634;
+}
+
+p {
+  font-size: 22px;
+  color: #373634;
+}
+
+.form {
+  color: #393836;
+  font-size: 20px;
+}
+
+.card {
+  background-color: #c4b0a2af;
+}
+
+.btn {
+  background-color: #9b816a;
+  color: white;
+  min-width: 160px;
+
+  &:hover {
+    color: white;
+    background-color: #74614f;
+  }
+}
+
+.fa {
+  color: #9b816a;
+}

@@ -1,8 +1,23 @@
 [
   {
+    "name": "contact",
+    "path": "/contact",
+    "component": "D:\\\\Web Projects\\\\Vue Nuxt\\\\myresturant1\\\\pages\\\\contact.vue",
+    "chunkName": "pages/contact",
+    "_name": "_efee9aec"
+  },
+  {
+    "name": "terms-service",
+    "path": "/terms-service",
+    "component": "D:\\\\Web Projects\\\\Vue Nuxt\\\\myresturant1\\\\pages\\\\terms-service\\\\index.vue",
+    "chunkName": "pages/terms-service/index",
+    "_name": "_ed53ceee"
+  },
+  {
     "name": "index",
     "path": "/",
     "component": "D:\\\\Web Projects\\\\Vue Nuxt\\\\myresturant1\\\\pages\\\\index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_cf784a88"
   }
 ]

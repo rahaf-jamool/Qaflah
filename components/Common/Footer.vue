@@ -27,6 +27,7 @@
         <p>Companies</p>
         <p>Services</p>
         <p>Partners</p>
+        <p><a href="/TermsService">Terms of Service </a></p>
       </div>
       <div class="right">
         <p>Home</p>

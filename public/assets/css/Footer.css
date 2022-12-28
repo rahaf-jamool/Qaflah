@@ -29,6 +29,12 @@
   text-align: left;
   font-family: Ubuntu;
 }
+.footer .details .right p a {
+  text-decoration: none;
+  color: #fff;
+  font-family: inherit;
+}
+
 .footer .details .left p {
   line-height: 40px;
   margin-right: 40px;

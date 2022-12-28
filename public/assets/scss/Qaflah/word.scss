@@ -1,0 +1,21 @@
+.word_section {
+  align-items: center;
+  justify-content: space-between;
+}
+.word_details .content {
+  padding: 80px;
+  color: #393836;
+}
+.word_details .content h2 {
+  padding: 20px 0;
+  font-size: 35px;
+  color: #373634;
+}
+
+.word_details .content li {
+  font-size: 20px;
+}
+
+ul.dash {
+  list-style-type: "- ";
+}
