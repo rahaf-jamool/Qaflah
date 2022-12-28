@@ -10,13 +10,13 @@
           UAE,Dubai,123st.
         </p>
         <ul class="social">
-          <li><i class="fa-brands fa-square-facebook">hi</i></li>
-          <li>fb</li>
-          <li>fb</li>
-          <li>fb</li>
-          <li>fb</li>
-          <li>fb</li>
-          <li>fb</li>
+          <li><img src="../../assets/imgs/25.png" alt="" /></li>
+          <li><img src="../../assets/imgs/26.png" alt="" /></li>
+          <li><img src="../../assets/imgs/27.png" alt="" /></li>
+          <li><img src="../../assets/imgs/28.png" alt="" /></li>
+          <li><img src="../../assets/imgs/29.png" alt="" /></li>
+          <li><img src="../../assets/imgs/30.png" alt="" /></li>
+          <li><img src="../../assets/imgs/31.png" alt="" /></li>
         </ul>
       </div>
       <div class="right">

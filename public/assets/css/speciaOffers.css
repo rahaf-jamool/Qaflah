@@ -133,9 +133,9 @@
 }
 .specialtabs .tabs-content .specialtab .owl-carousel .owl-nav button.owl-prev,
 .specialtabs .tabs-content .specialtab .owl-carousel .owl-nav button.owl-next {
-  font-size: 35px !important;
-  width: 70px !important;
-  height: 70px !important;
+  font-size: 25px !important;
+  width: 50px !important;
+  height: 50px !important;
   border: 2px solid #3a322e !important;
   border-radius: 70px;
 }

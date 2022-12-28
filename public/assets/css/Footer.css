@@ -1,9 +1,11 @@
 .footer {
   height: 600px;
   background-image: url("../../../assets/imgs/img_12.png");
-  background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .footer .details {
   display: flex;
@@ -14,7 +16,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  margin-right: 200px;
 }
 
 .footer .details .left img {
@@ -24,12 +27,21 @@
 .footer .details .right p {
   color: #fff;
   text-align: left;
+  font-family: Ubuntu;
 }
 .footer .details .left p {
   line-height: 40px;
   margin-right: 40px;
 }
-
+.footer .details .social {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.footer .details .social img {
+  width: 40px;
+  margin-right: 20px;
+}
 .footer .details .left ul {
   display: flex;
 }
@@ -38,7 +50,7 @@
   color: #fff;
 }
 .footer .details .right {
-  margin-bottom: 150px;
+  margin: 0 88px 175px 0;
 }
 .footer .details .right p {
   margin: 0;
