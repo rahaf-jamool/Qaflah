@@ -19,6 +19,20 @@
                     "
                     alt="photo"
                   />
+                  <div class="paragraph">
+                    <p class="paraTitle">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit
+                    </p>
+                    <p class="paradesc">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit
+                    </p>
+                  </div>
+                  <div class="whiteLine"></div>
+                  <div class="kNumber">
+                    <p>2.1K</p>
+                    <img src="../../assets/imgs/23.png" alt="" />
+                  </div>
                 </div>
               </figure>
             </div>

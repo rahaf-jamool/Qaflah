@@ -44,6 +44,9 @@
   "SpecialOffers": {
     "description": "Auto imported from components/SpecialOffers/SpecialOffers.vue"
   },
+  "TermsService": {
+    "description": "Auto imported from components/Terms-Service/TermsService.vue"
+  },
   "MediaGallery": {
     "description": "Auto imported from components/Media/Gallery/Gallery.vue"
   },

@@ -65,7 +65,7 @@
     <!-- End carousel -->
     <div class="itemsContainer">
       <div class="content">
-        <div class="item1">
+        <!-- <div class="item1">
           <div class="text">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Non id
@@ -91,7 +91,7 @@
               laboriosam voluptatum debitis
             </p>
           </div>
-        </div>
+        </div> -->
       </div>
       <div class="down">
         <div class="order">
@@ -108,47 +108,6 @@
         </div>
       </div>
     </div>
-    <!-- <div class="myContainer">
-      <div class="content">
-        Paragaph Text
-        <div class="text">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non id
-            earum corporis obcaecati optio repellat maiores dolorum, laboriosam
-            voluptatum debitis
-          </p>
-        </div>
-        <div class="text">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non id
-            earum corporis obcaecati optio repellat maiores dolorum, laboriosam
-            voluptatum debitis
-          </p>
-        </div>
-        <div class="text">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non id
-            earum corporis obcaecati optio repellat maiores dolorum, laboriosam
-            voluptatum debitis
-          </p>
-        </div>
-      </div>
-      <div class="down">
-        Order Now
-        <div class="order">
-          <a href="#"><p>Order Now</p></a>
-        </div>
-        <div class="title">
-          <p>Lorem ipsum <br />dolor sit amet</p>
-        </div>
-        <div class="desc">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit<br />
-            Non id corporis obcaecati optio repellat maiores dolore
-          </p>
-        </div>
-      </div>
-    </div> -->
   </div>
 </template>
 <script>

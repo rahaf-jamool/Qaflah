@@ -4,7 +4,7 @@
 
 .sectionTwo {
   position: relative;
-  height: 60vh;
+  height: auto;
   background-image: url("assets/imgs/02.png");
   background-size: cover;
 }
