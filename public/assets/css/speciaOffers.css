@@ -1,0 +1,155 @@
+.specialtabs {
+  display: flex;
+  flex-direction: column;
+}
+.specialtabs .specialtabHead {
+  margin-top: 150px;
+  display: flex;
+  height: 44px;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.specialtabs .specialtabHead .main-title {
+  font-size: 30px;
+  margin-left: 50px;
+}
+
+.specialtabs .tabs-content {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.specialtabs .tabs-content .specialtab {
+  display: flex;
+  flex-direction: row;
+}
+.specialtabs .tabs-content .specialtab .left {
+  display: flex;
+  flex-direction: column;
+}
+.specialtabs .tabs-content .specialtab .left .order-title {
+  font-family: UbuntuBold;
+  font-size: 40px;
+  line-height: 35px;
+}
+.specialtabs .tabs-content .specialtab .left .order-title span {
+  font-family: Ubuntu;
+  font-size: 20px;
+}
+.specialtabs .tabs-content .specialtab .item img {
+  width: 350px;
+  height: 440px;
+  border-radius: 35px;
+}
+.specialtabs
+  .tabs-content
+  .specialtab
+  .items-arrivals
+  .item
+  .item-image
+  .item-container {
+  position: relative;
+}
+
+.specialtabs .tabs-content .specialtab .items-arrivals {
+  padding: 20px 30px;
+  width: 1200px;
+}
+
+.items-arrivals .item .item-image {
+  width: 100%;
+  height: 100%;
+  transition: 0.8s ease-out;
+}
+
+.items-arrivals .item .item-image figure {
+  position: relative;
+  margin: unset;
+  background-size: cover;
+}
+.specialtab .items-arrivals .item .item-image .item-container .frame {
+  width: 100%;
+  height: 250px;
+  position: absolute;
+  top: 190px;
+  right: 0;
+  border-radius: 0 0 35px 35px;
+}
+.specialtab .items-arrivals .item .item-image .item-container .img-title {
+  font-family: UbuntuBold;
+  position: absolute;
+  top: 290px;
+  font-size: 25px;
+  right: 0;
+  left: 0;
+  color: #fff;
+}
+.specialtab .items-arrivals .item .item-image .item-container .img-desc {
+  font-family: Ubuntu;
+  text-align: left;
+  position: absolute;
+  width: 334px;
+  top: 330px;
+  font-size: 15px;
+  line-height: 17px;
+  right: 0;
+  left: 46px;
+  color: #fff;
+}
+.specialtab .items-arrivals .item .item-image .item-container .img-button {
+  position: absolute;
+  top: 395px;
+  right: 0;
+  left: 125px;
+  width: 90px;
+  color: #fff;
+  z-index: 10;
+  background-color: transparent;
+  padding: 3px 10px 3px 10px;
+  border: 1px solid #d5b67d;
+  border-radius: 8px 8px 0px 8px;
+  transition: 0.8s all ease-in-out;
+}
+.specialtab
+  .items-arrivals
+  .item
+  .item-image
+  .item-container
+  .img-button:hover {
+  background-color: #fff;
+  color: #3a322e;
+}
+
+.specialtabs .tabs-content .specialtab .owl-theme .owl-nav {
+  position: absolute;
+  top: -100px;
+  left: 90%;
+  white-space: nowrap;
+  text-align: center !important;
+}
+.specialtabs .tabs-content .specialtab .owl-carousel .owl-nav button.owl-prev,
+.specialtabs .tabs-content .specialtab .owl-carousel .owl-nav button.owl-next {
+  font-size: 35px !important;
+  width: 70px !important;
+  height: 70px !important;
+  border: 2px solid #3a322e !important;
+  border-radius: 70px;
+}
+
+.specialtabs .tabs-content .specialtab .owl-theme .owl-dots {
+  text-align: left !important;
+}
+
+.specialtabs .tabs-content .specialtab .owl-carousel {
+  width: auto;
+}
+.specialtabs .tabs-content .specialtab .owl-carousel.owl-drag .owl-item {
+  width: auto !important;
+}
+.specialtabs .tabs-content .specialtab .owl-theme .owl-dots {
+  display: none;
+}

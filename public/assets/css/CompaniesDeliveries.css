@@ -1,0 +1,9 @@
+.myCompaniesDeliveries {
+  position: relative;
+}
+.companiesservices {
+  height: 1500px;
+  background-image: url("../../../assets/imgs/img_02_03.png");
+  background-position: center;
+  background-size: cover;
+}

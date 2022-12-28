@@ -20,8 +20,14 @@
   "CommonHeader": {
     "description": "Auto imported from components/Common/Header.vue"
   },
+  "CompaniesDeliveries": {
+    "description": "Auto imported from components/CompaniesDeliveries/CompaniesDeliveries.vue"
+  },
   "CompaniesServices": {
     "description": "Auto imported from components/CompaniesServices/CompaniesServices.vue"
+  },
+  "DeliveryServices": {
+    "description": "Auto imported from components/DeliveryServices/DeliveryServices.vue"
   },
   "FreightTypes": {
     "description": "Auto imported from components/FreightTypes/FreightTypes.vue"
@@ -31,6 +37,12 @@
   },
   "MainPage": {
     "description": "Auto imported from components/MainPage/MainPage.vue"
+  },
+  "MediaCenter": {
+    "description": "Auto imported from components/MediaCenter/MediaCenter.vue"
+  },
+  "SpecialOffers": {
+    "description": "Auto imported from components/SpecialOffers/SpecialOffers.vue"
   },
   "MediaGallery": {
     "description": "Auto imported from components/Media/Gallery/Gallery.vue"
