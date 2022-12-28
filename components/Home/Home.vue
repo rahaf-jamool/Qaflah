@@ -2,16 +2,18 @@
 import MainPage from "../MainPage/MainPage.vue";
 import FreightTypes from "../FreightTypes/FreightTypes.vue";
 import BriefPage from "../BriefPage/BriefPage.vue";
-import CompaniesServices from "../CompaniesServices/CompaniesServices.vue";
-import Gallery from "../Media/Gallery/Gallery.vue";
+import CompaniesDeliveries from "../CompaniesDeliveries/CompaniesDeliveries.vue";
+import SpecialOffers from "../SpecialOffers/SpecialOffers.vue";
+import MediaCenter from "../MediaCenter/MediaCenter.vue";
 export default {
   name: "home",
   components: {
     MainPage,
     FreightTypes,
     BriefPage,
-    CompaniesServices,
-    Gallery,
+    CompaniesDeliveries,
+    SpecialOffers,
+    MediaCenter,
   },
 };
 </script>
@@ -21,8 +23,9 @@ export default {
     <MainPage />
     <FreightTypes />
     <BriefPage />
-    <CompaniesServices />
-    <Gallery />
+    <CompaniesDeliveries />
+    <SpecialOffers />
+    <MediaCenter />
   </main>
 </template>
 

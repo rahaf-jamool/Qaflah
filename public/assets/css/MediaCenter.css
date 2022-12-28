@@ -1,0 +1,51 @@
+.mediatabs {
+  height: 1200px;
+  position: relative;
+  width: 100%;
+}
+.mediatabs .mediatab {
+  position: relative;
+}
+.mediatabs .main-title {
+  font-size: 30px;
+  margin-left: 50px;
+}
+.mediatabs .items-media .item-container {
+  width: 400px;
+  height: 100px;
+  margin-right: 10px;
+  background-color: #deb477;
+}
+.mediatabs .items-media .owl-carousel .owl-item img {
+  width: 50px;
+  height: 50px;
+}
+.mediatabs .items-media .owl-carousel .owl-stage-outer {
+  width: 810px;
+}
+.mediatabs .items-media .owl-carousel .owl-stage {
+  width: 1655px !important;
+}
+.mediatabs .items-media .owl-carousel.owl-loaded {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.mediatabs .items-media .owl-theme .owl-nav {
+  margin-top: 10px;
+  text-align: left !important;
+  position: absolute;
+  top: -60px;
+  left: 85%;
+  right: 0;
+  white-space: nowrap;
+}
+.mediatabs .media-image {
+  width: 100%;
+  position: absolute;
+  top: 0px;
+}
+.mediatabs .media-image img {
+  width: 100%;
+}
