@@ -70,6 +70,7 @@
   border-radius: 20px 20px 0px 20px;
   font-family: Ubuntu;
   border: 1px solid #3a322e;
+  z-index: 2;
   transition: all 0.3s ease-in-out;
 }
 .down .order p:hover {

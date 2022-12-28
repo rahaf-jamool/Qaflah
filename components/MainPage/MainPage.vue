@@ -65,7 +65,7 @@
     <!-- End carousel -->
     <div class="itemsContainer">
       <div class="content">
-        <div class="item1">
+        <!-- <div class="item1">
           <div class="text">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Non id
@@ -91,7 +91,7 @@
               laboriosam voluptatum debitis
             </p>
           </div>
-        </div>
+        </div> -->
       </div>
       <div class="down">
         <div class="order">
