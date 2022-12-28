@@ -11,14 +11,14 @@
   "Tutorial": {
     "description": "Auto imported from components/Tutorial.vue"
   },
-  "BriefPage": {
-    "description": "Auto imported from components/BriefPage/BriefPage.vue"
-  },
   "CommonFooter": {
     "description": "Auto imported from components/Common/Footer.vue"
   },
   "CommonHeader": {
     "description": "Auto imported from components/Common/Header.vue"
+  },
+  "BriefPage": {
+    "description": "Auto imported from components/BriefPage/BriefPage.vue"
   },
   "CompaniesServices": {
     "description": "Auto imported from components/CompaniesServices/CompaniesServices.vue"
