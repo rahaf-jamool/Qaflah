@@ -91,6 +91,8 @@
   text-shadow: 2px 2px #3a322e;
   text-shadow: 2px 2px 4px #000000;
   line-height: 75px;
+  width: auto;
+  max-width: 88%;
 }
 .down .desc p {
   color: #fff;
@@ -98,8 +100,12 @@
   font-size: 30px;
   text-align: justify;
   position: relative;
-  left: calc(3em - 0.4em);
+  left: 2.6em;
   margin-top: -40px;
+  width: auto;
+  max-width: 93%;
+  white-space: nowrap;
+  min-width: 50%;
 }
 .down .desc {
   grid-area: desc;
@@ -128,6 +134,7 @@
   }
   .down .desc p {
     left: 2em;
+    font-size: 28px;
   }
 }
 @media (max-width: 768px) {
@@ -144,17 +151,9 @@
     padding: 2px 2px;
     font-size: 5px;
   }
-  .down .order p {
-    left: 3em;
-    padding: 2px 10px 2px 10px;
-    width: 100px;
-    font-size: 8px;
-  }
-
   .down {
     top: 20px;
   }
-
   .down .order p {
     left: 3em;
     padding: 2px 10px 2px 10px;

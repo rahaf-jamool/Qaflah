@@ -4,34 +4,45 @@
     <!-- Start Navbar -->
     <div class="navbar">
       <div class="leftSide">
-        <div class="logo">
-          <img src="~assets/imgs/img_11_colored.png" alt="logo" />
-        </div>
+        <nuxt-link to="/">
+          <div class="logo">
+            <img src="~assets/imgs/img_11_colored.png" alt="logo" />
+          </div>
+        </nuxt-link>
 
         <nav class="nav-bar">
           <ul>
-            <li><NuxtLink to="#">Home</NuxtLink></li>
+            <li><NuxtLink to="/">Home</NuxtLink></li>
             <li>
-              <NuxtLink to="#" class="about"
+              <a href="#" class="about"
                 >About
                 <ul class="dropdown">
-                  <li><NuxtLink to="#">Company Profile</NuxtLink></li>
-                  <li><NuxtLink to="#">Vision And Mission</NuxtLink></li>
-                  <li><NuxtLink to="#">General Manager's Speech</NuxtLink></li>
+                  <li>
+                    <NuxtLink to="/company-profile">Company Profile</NuxtLink>
+                  </li>
+                  <li>
+                    <NuxtLink to="/vision-mission">Vision And Mission</NuxtLink>
+                  </li>
+                  <li>
+                    <NuxtLink to="/general-managers-speech"
+                      >General Manager's Speech</NuxtLink
+                    >
+                  </li>
                 </ul>
-              </NuxtLink>
+              </a>
             </li>
             <li><NuxtLink to="#">Orders</NuxtLink></li>
             <li>
               <NuxtLink to="#" class="media"
                 >Media Center
                 <ul class="dropdown">
-                  <li><NuxtLink to="#">News</NuxtLink></li>
-                  <li><NuxtLink to="/Gallery">Vedios</NuxtLink></li>
-                  <li><NuxtLink to="/gallery">Gallery</NuxtLink></li>
+                  <li><NuxtLink to="/media/news">News</NuxtLink></li>
+                  <li><NuxtLink to="/media/videos">Vedios</NuxtLink></li>
+                  <li><NuxtLink to="/media/gallery">Gallery</NuxtLink></li>
                 </ul></NuxtLink
               >
             </li>
+            <li><NuxtLink to="/contact">Contact Us</NuxtLink></li>
           </ul>
         </nav>
         <div class="navbutton" @click="toggleClass">

@@ -41,6 +41,26 @@
         <div class="media-image">
           <img src="../../assets/imgs/img_08_09.png" alt="" />
         </div>
+        <div class="brands">
+          <a href="https://www.aramex.com/us/en"
+            ><img src="../../assets/imgs/brands/image001.png" alt="aramex"
+          /></a>
+          <a href="https://www.dhl.com/sy-en/home.html?locale=true"
+            ><img src="../../assets/imgs/brands/image002.jpg" alt="aramex"
+          /></a>
+          <a href="https://www.smsaexpress.com/"
+            ><img src="../../assets/imgs/brands/image003.jpg" alt="aramex"
+          /></a>
+          <a href="https://shipa.com/our-story/"
+            ><img src="../../assets/imgs/brands/image004.jpg" alt="aramex"
+          /></a>
+          <a href="https://aymakan.com.sa/en"
+            ><img src="../../assets/imgs/brands/image005.jpg" alt="aramex"
+          /></a>
+          <a href="https://www.saee.sa/en/about-us/"
+            ><img src="../../assets/imgs/brands/image006.png" alt="aramex"
+          /></a>
+        </div>
       </div>
     </div>
   </div>

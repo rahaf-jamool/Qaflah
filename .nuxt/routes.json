@@ -1,5 +1,12 @@
 [
   {
+    "name": "company-profile",
+    "path": "/company-profile",
+    "component": "/home/rahafjamool/Documents/Projects Nerva/القافلة/Qaflah/pages/company-profile.vue",
+    "chunkName": "pages/company-profile",
+    "_name": "_b5406836"
+  },
+  {
     "name": "contact",
     "path": "/contact",
     "component": "/home/rahafjamool/Documents/Projects Nerva/القافلة/Qaflah/pages/contact.vue",
@@ -7,11 +14,46 @@
     "_name": "_1a2ce7a8"
   },
   {
+    "name": "general-managers-speech",
+    "path": "/general-managers-speech",
+    "component": "/home/rahafjamool/Documents/Projects Nerva/القافلة/Qaflah/pages/general-managers-speech.vue",
+    "chunkName": "pages/general-managers-speech",
+    "_name": "_5d60b550"
+  },
+  {
     "name": "terms-service",
     "path": "/terms-service",
     "component": "/home/rahafjamool/Documents/Projects Nerva/القافلة/Qaflah/pages/terms-service/index.vue",
     "chunkName": "pages/terms-service/index",
     "_name": "_71cbc784"
+  },
+  {
+    "name": "vision-mission",
+    "path": "/vision-mission",
+    "component": "/home/rahafjamool/Documents/Projects Nerva/القافلة/Qaflah/pages/vision-mission.vue",
+    "chunkName": "pages/vision-mission",
+    "_name": "_db6f606a"
+  },
+  {
+    "name": "media-gallery",
+    "path": "/media/gallery",
+    "component": "/home/rahafjamool/Documents/Projects Nerva/القافلة/Qaflah/pages/media/gallery/index.vue",
+    "chunkName": "pages/media/gallery/index",
+    "_name": "_b99d4c14"
+  },
+  {
+    "name": "media-news",
+    "path": "/media/news",
+    "component": "/home/rahafjamool/Documents/Projects Nerva/القافلة/Qaflah/pages/media/news/index.vue",
+    "chunkName": "pages/media/news/index",
+    "_name": "_20f830c5"
+  },
+  {
+    "name": "media-videos",
+    "path": "/media/videos",
+    "component": "/home/rahafjamool/Documents/Projects Nerva/القافلة/Qaflah/pages/media/videos/index.vue",
+    "chunkName": "pages/media/videos/index",
+    "_name": "_5f28956c"
   },
   {
     "name": "index",

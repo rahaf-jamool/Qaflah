@@ -85,7 +85,6 @@
           <carousel
             class="items-arrivals"
             :responsive="responsive"
-            :autoplay="true"
             :autoWidth="true"
           >
             <div class="item" v-for="item in ResentArrivals" :key="item.id">
@@ -132,8 +131,8 @@
 </template>
 
 <script>
+// import "../../public/assets/css/CompaniesServices.css";
 import "../../public/assets/css/CompaniesServices.css";
-
 export default {
   name: "companiesservices",
   data() {

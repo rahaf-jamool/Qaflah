@@ -56,7 +56,7 @@ export default {
   ],
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ["~/public/assets/css/main.css"],
+  css: ["~/public/assets/css/main.css", "~/public/assets/scss/main.scss"],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,

@@ -27,7 +27,7 @@
         <p>Companies</p>
         <p>Services</p>
         <p>Partners</p>
-        <p><a href="/TermsService">Terms of Service </a></p>
+        <p><nuxt-link to="/terms-service">Terms of Service </nuxt-link></p>
       </div>
       <div class="right">
         <p>Home</p>

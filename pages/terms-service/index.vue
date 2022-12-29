@@ -1,5 +1,7 @@
 <template>
-  <TermsService />
+  <div style="padding-top:100px">
+    <TermsService />
+  </div>
 </template>
 
 <script>

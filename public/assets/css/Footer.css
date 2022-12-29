@@ -11,6 +11,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  width: 100%;
 }
 .footer .details .left {
   display: flex;

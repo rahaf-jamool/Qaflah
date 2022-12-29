@@ -108,9 +108,9 @@
   padding: 10px;
 }
 
-.items-arrivals {
+.myDeliveryServices .items-arrivals {
   padding: 20px 30px;
-  width: 880px;
+  width: 890px;
 }
 .items-arrivals .item {
   text-align: center;

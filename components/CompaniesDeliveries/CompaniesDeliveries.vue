@@ -7,7 +7,7 @@
 
 <script>
 import "../../public/assets/css/CompaniesDeliveries.css";
-import "../CompaniesDeliveries/CompaniesDeliveries";
+import "../CompaniesServices/CompaniesServices.vue";
 import "../DeliveryServices/DeliveryServices.vue";
 
 export default {
