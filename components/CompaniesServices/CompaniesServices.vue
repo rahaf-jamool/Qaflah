@@ -85,7 +85,6 @@
           <carousel
             class="items-arrivals"
             :responsive="responsive"
-            :autoplay="true"
             :autoWidth="true"
           >
             <div class="item" v-for="item in ResentArrivals" :key="item.id">
