@@ -132,8 +132,8 @@
 </template>
 
 <script>
+// import "../../public/assets/css/CompaniesServices.css";
 import "../../public/assets/css/CompaniesServices.css";
-
 export default {
   name: "companiesservices",
   data() {

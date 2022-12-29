@@ -11,8 +11,14 @@
   "Tutorial": {
     "description": "Auto imported from components/Tutorial.vue"
   },
-  "BriefPage": {
-    "description": "Auto imported from components/BriefPage/BriefPage.vue"
+  "About": {
+    "description": "Auto imported from components/About/About.vue"
+  },
+  "AboutVision": {
+    "description": "Auto imported from components/About/Vision.vue"
+  },
+  "AboutWord": {
+    "description": "Auto imported from components/About/Word.vue"
   },
   "CommonFooter": {
     "description": "Auto imported from components/Common/Footer.vue"
@@ -29,20 +35,23 @@
   "DeliveryServices": {
     "description": "Auto imported from components/DeliveryServices/DeliveryServices.vue"
   },
-  "FreightTypes": {
-    "description": "Auto imported from components/FreightTypes/FreightTypes.vue"
+  "HomeBriefPage": {
+    "description": "Auto imported from components/Home/BriefPage.vue"
+  },
+  "HomeFreightTypes": {
+    "description": "Auto imported from components/Home/FreightTypes.vue"
   },
   "Home": {
     "description": "Auto imported from components/Home/Home.vue"
   },
-  "MainPage": {
-    "description": "Auto imported from components/MainPage/MainPage.vue"
+  "HomeMainPage": {
+    "description": "Auto imported from components/Home/MainPage.vue"
   },
-  "MediaCenter": {
-    "description": "Auto imported from components/MediaCenter/MediaCenter.vue"
+  "HomeMediaCenter": {
+    "description": "Auto imported from components/Home/MediaCenter.vue"
   },
-  "SpecialOffers": {
-    "description": "Auto imported from components/SpecialOffers/SpecialOffers.vue"
+  "HomeSpecialOffers": {
+    "description": "Auto imported from components/Home/SpecialOffers.vue"
   },
   "TermsService": {
     "description": "Auto imported from components/Terms-Service/TermsService.vue"

@@ -1,10 +1,10 @@
 <script>
-import MainPage from "../MainPage/MainPage.vue";
-import FreightTypes from "../FreightTypes/FreightTypes.vue";
-import BriefPage from "../BriefPage/BriefPage.vue";
+import MainPage from "./MainPage.vue";
+import FreightTypes from "./FreightTypes.vue";
+import BriefPage from "./BriefPage.vue";
 import CompaniesDeliveries from "../CompaniesDeliveries/CompaniesDeliveries.vue";
-import SpecialOffers from "../SpecialOffers/SpecialOffers.vue";
-import MediaCenter from "../MediaCenter/MediaCenter.vue";
+import SpecialOffers from "./SpecialOffers.vue";
+import MediaCenter from "./MediaCenter.vue";
 export default {
   name: "home",
   components: {
