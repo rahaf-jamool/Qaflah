@@ -14,14 +14,14 @@
   "BriefPage": {
     "description": "Auto imported from components/BriefPage/BriefPage.vue"
   },
+  "CompaniesDeliveries": {
+    "description": "Auto imported from components/CompaniesDeliveries/CompaniesDeliveries.vue"
+  },
   "CommonFooter": {
     "description": "Auto imported from components/Common/Footer.vue"
   },
   "CommonHeader": {
     "description": "Auto imported from components/Common/Header.vue"
-  },
-  "CompaniesDeliveries": {
-    "description": "Auto imported from components/CompaniesDeliveries/CompaniesDeliveries.vue"
   },
   "CompaniesServices": {
     "description": "Auto imported from components/CompaniesServices/CompaniesServices.vue"

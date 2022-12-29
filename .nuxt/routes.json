@@ -2,19 +2,22 @@
   {
     "name": "contact",
     "path": "/contact",
-    "component": "D:\\\\Web Projects\\\\Vue Nuxt\\\\myresturant1\\\\pages\\\\contact.vue",
-    "chunkName": "pages/contact"
+    "component": "/home/rahafjamool/Documents/Projects Nerva/القافلة/Qaflah/pages/contact.vue",
+    "chunkName": "pages/contact",
+    "_name": "_1a2ce7a8"
   },
   {
     "name": "terms-service",
     "path": "/terms-service",
-    "component": "D:\\\\Web Projects\\\\Vue Nuxt\\\\myresturant1\\\\pages\\\\terms-service\\\\index.vue",
-    "chunkName": "pages/terms-service/index"
+    "component": "/home/rahafjamool/Documents/Projects Nerva/القافلة/Qaflah/pages/terms-service/index.vue",
+    "chunkName": "pages/terms-service/index",
+    "_name": "_71cbc784"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/home/rahafjamool/Documents/Projects Nerva/القافلة/Qaflah/pages/index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_1372b4de"
   }
 ]
