@@ -1,6 +1,5 @@
 <template>
-  <div style="padding-top: 100px">
-    <PageTitle title="News" />
+  <div style="padding-top: 100px ">
     <div class="container m-4">
       <div class="row row-cols-auto justify-content-center g-4">
         <div class="col" v-for="item in news" :key="item.id">

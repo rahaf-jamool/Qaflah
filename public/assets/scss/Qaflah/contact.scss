@@ -1,23 +1,23 @@
-h2 {
+.contact h2 {
   font-weight: 600;
   color: $text-color;
 }
 
-p {
+.contact p {
   font-size: 22px;
   color: $text-color;
 }
 
-.form {
+.contact .form {
   color: #393836;
   font-size: 20px;
 }
 
-.contact-card {
+.contact .contact-card {
   background-color: #c4b0a2af;
 }
 
-.btn {
+.contact .btn {
   background-color: #9b816a;
   color: white;
   min-width: 160px;
@@ -28,6 +28,6 @@ p {
   }
 }
 
-.fa {
+.contact .fa {
   color: #9b816a;
 }
