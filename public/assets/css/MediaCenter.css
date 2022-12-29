@@ -94,3 +94,17 @@
 .mediatabs .media-image img {
   width: 100%;
 }
+.mediatabs .brands {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.46);
+  bottom: 0;
+  z-index: 2;
+  justify-content: center;
+  align-items: center;
+}
+
+.mediatabs .brands img {
+  width: 200px;
+}
